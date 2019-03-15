@@ -1,0 +1,57 @@
+\begin{thebibliography}{10}
+
+\bibitem{lienhart1998comparison}
+R.~W. Lienhart, ``Comparison of automatic shot boundary detection algorithms,''
+  in {\em Storage and Retrieval for Image and Video Databases VII}, vol.~3656,
+  pp.~290--302, International Society for Optics and Photonics, 1998.
+
+\bibitem{shao2015shot}
+H.~Shao, Y.~Qu, and W.~Cui, ``Shot boundary detection algorithm based on hsv
+  histogram and hog feature,'' in {\em 5th International Conference on Advanced
+  Engineering Materials and Technology}, pp.~951--957, 2015.
+
+\bibitem{lienhart1997detection}
+R.~Lienhart, C.~Kuhm{\"u}nch, and W.~Effelsberg, ``On the detection and
+  recognition of television commercials,'' 1997.
+
+\bibitem{gauch2006finding}
+J.~M. Gauch and A.~Shivadas, ``Finding and identifying unknown commercials
+  using repeated video sequence detection,'' {\em Computer Vision and Image
+  Understanding}, vol.~103, no.~1, pp.~80--88, 2006.
+
+\bibitem{covell2006advertisement}
+M.~Covell, S.~Baluja, and M.~Fink, ``Advertisement detection and replacement
+  using acoustic and visual repetition,'' in {\em Multimedia Signal Processing,
+  2006 IEEE 8th workshop on}, pp.~461--466, IEEE, 2006.
+
+\bibitem{wang2008multimodal}
+J.~Wang, L.~Duan, Q.~Liu, H.~Lu, and J.~S. Jin, ``A multimodal scheme for
+  program segmentation and representation in broadcast video streams,'' {\em
+  IEEE Transactions on Multimedia}, vol.~10, no.~3, pp.~393--408, 2008.
+
+\bibitem{herley2006argos}
+C.~Herley, ``Argos: Automatically extracting repeating objects from multimedia
+  streams,'' {\em IEEE Transactions on multimedia}, vol.~8, no.~1,
+  pp.~115--129, 2006.
+
+\bibitem{benezeth2010unsupervised}
+Y.~Benezeth and S.-A. Berrani, ``Unsupervised credit detection in tv broadcast
+  streams,'' in {\em Multimedia (ISM), 2010 IEEE International Symposium on},
+  pp.~175--182, IEEE, 2010.
+
+\bibitem{abduraman2011unsupervised}
+A.~E. Abduraman, S.-A. Berrani, and B.~Merialdo, ``An unsupervised approach for
+  recurrent tv program structuring,'' in {\em Proceedings of the 9th European
+  Conference on Interactive TV and Video}, pp.~123--126, ACM, 2011.
+
+\bibitem{zheng2018sift}
+L.~Zheng, Y.~Yang, and Q.~Tian, ``Sift meets cnn: A decade survey of instance
+  retrieval,'' {\em IEEE transactions on pattern analysis and machine
+  intelligence}, vol.~40, no.~5, pp.~1224--1244, 2018.
+
+\bibitem{tesseract}
+R.~Smith, ``An overview of the tesseract ocr engine,'' in {\em Document
+  Analysis and Recognition, 2007. ICDAR 2007. Ninth International Conference
+  on}, vol.~2, pp.~629--633, IEEE, 2007.
+
+\end{thebibliography}

@@ -1,0 +1,340 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  14 MAR 2019 14:43
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2018-04-01> patch level 5
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+y"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks17
+\float@box=\box26
+\@float@everytoks=\toks18
+\@floatcapt=\box27
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@caption@flags=\count89
+\c@ContinuedFloat=\count90
+Package caption Info: float package is loaded.
+)
+\c@subfigure=\count91
+\c@subtable=\count92
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\changepage\changep
+age.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count93
+\cp@tempcnt=\count94
+) (main.aux
+
+LaTeX Warning: Label `fig:closingcredits' multiply defined.
+
+
+LaTeX Warning: Label `fig:closingcredits' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count95
+\scratchdimen=\dimen112
+\scratchbox=\box28
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen113
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks20
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+ [1
+
+{C:/Users/niels/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+[3]
+<images/screencreditslarge.png, id=17, 691.383pt x 425.1885pt>
+File: images/screencreditslarge.png Graphic file (type png)
+<use images/screencreditslarge.png>
+Package pdftex.def Info: images/screencreditslarge.png  used on input line 46.
+(pdftex.def)             Requested size: 137.9979pt x 84.86101pt.
+<images/screencreditslarge2.png, id=19, 605.8635pt x 379.4175pt>
+File: images/screencreditslarge2.png Graphic file (type png)
+<use images/screencreditslarge2.png>
+Package pdftex.def Info: images/screencreditslarge2.png  used on input line 49.
+
+(pdftex.def)             Requested size: 137.9979pt x 86.41893pt.
+<images/diffcredits.png, id=20, 451.6875pt x 255.95625pt>
+File: images/diffcredits.png Graphic file (type png)
+<use images/diffcredits.png>
+Package pdftex.def Info: images/diffcredits.png  used on input line 52.
+(pdftex.def)             Requested size: 137.9979pt x 78.20128pt.
+<images/diffcredits2.png, id=21, 437.38406pt x 255.95625pt>
+File: images/diffcredits2.png Graphic file (type png)
+<use images/diffcredits2.png>
+Package pdftex.def Info: images/diffcredits2.png  used on input line 55.
+(pdftex.def)             Requested size: 137.9979pt x 80.75552pt.
+ [4 <./images/screencreditslarge.png> <./images/screencreditslarge2.png> <./ima
+ges/diffcredits.png> <./images/diffcredits2.png>]
+<images/straks.png, id=29, 965.40675pt x 508.299pt>
+File: images/straks.png Graphic file (type png)
+<use images/straks.png>
+Package pdftex.def Info: images/straks.png  used on input line 71.
+(pdftex.def)             Requested size: 213.39566pt x 112.35353pt.
+<images/colorhistogram.png, id=30, 578.16pt x 433.62pt>
+File: images/colorhistogram.png Graphic file (type png)
+<use images/colorhistogram.png>
+Package pdftex.def Info: images/colorhistogram.png  used on input line 90.
+(pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
+ [5 <./images/straks.png>]
+<images/shotchange.jpg, id=39, 747.39224pt x 114.4275pt>
+File: images/shotchange.jpg Graphic file (type jpg)
+<use images/shotchange.jpg>
+Package pdftex.def Info: images/shotchange.jpg  used on input line 103.
+(pdftex.def)             Requested size: 341.43306pt x 52.27411pt.
+<images/hsv.png, id=40, 297.11pt x 222.8325pt>
+File: images/hsv.png Graphic file (type png)
+<use images/hsv.png>
+Package pdftex.def Info: images/hsv.png  used on input line 114.
+(pdftex.def)             Requested size: 142.26378pt x 106.70337pt.
+
+[6 <./images/colorhistogram.png> <./images/shotchange.jpg>] [7 <./images/hsv.pn
+g>] [8]
+<images/simmatrixarrow.jpg, id=52, 540.8205pt x 539.01375pt>
+File: images/simmatrixarrow.jpg Graphic file (type jpg)
+<use images/simmatrixarrow.jpg>
+Package pdftex.def Info: images/simmatrixarrow.jpg  used on input line 197.
+(pdftex.def)             Requested size: 284.52756pt x 283.57863pt.
+ [9]
+<images/shotlengths_recaps_true.png, id=57, 385.44pt x 252.945pt>
+File: images/shotlengths_recaps_true.png Graphic file (type png)
+<use images/shotlengths_recaps_true.png>
+Package pdftex.def Info: images/shotlengths_recaps_true.png  used on input line
+ 212.
+(pdftex.def)             Requested size: 137.9979pt x 90.55838pt.
+<images/shotlengths_recaps_false.png, id=58, 386.44376pt x 252.945pt>
+File: images/shotlengths_recaps_false.png Graphic file (type png)
+<use images/shotlengths_recaps_false.png>
+Package pdftex.def Info: images/shotlengths_recaps_false.png  used on input lin
+e 215.
+(pdftex.def)             Requested size: 137.9979pt x 90.3268pt.
+ [10 <./images/simmatrixarrow.jpg>]
+<images/audio_recaps_true.png, id=62, 384.43625pt x 265.99374pt>
+File: images/audio_recaps_true.png Graphic file (type png)
+<use images/audio_recaps_true.png>
+Package pdftex.def Info: images/audio_recaps_true.png  used on input line 224.
+(pdftex.def)             Requested size: 137.9979pt x 95.48167pt.
+<images/audio_recaps_false.png, id=63, 391.4625pt x 265.99374pt>
+File: images/audio_recaps_false.png Graphic file (type png)
+<use images/audio_recaps_false.png>
+Package pdftex.def Info: images/audio_recaps_false.png  used on input line 227.
+
+(pdftex.def)             Requested size: 137.9979pt x 93.76889pt.
+ (main.bbl [11 <./images/shotlengths_recaps_true.png> <./images/shotlengths_rec
+aps_false.png> <./images/audio_recaps_true.png> <./images/audio_recaps_false.pn
+g>]) [12] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2821 strings out of 492970
+ 46789 string characters out of 3126593
+ 109815 words of memory out of 3000000
+ 6662 multiletter control sequences out of 15000+200000
+ 8600 words of font info for 30 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,7n,40p,1055b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/niels/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/niels/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/
+niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/niels/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/niels/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/niels/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (12 pages, 4432701 bytes).
+PDF statistics:
+ 113 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+

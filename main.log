@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  21 MAR 2019 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  1 APR 2019 11:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -94,36 +94,127 @@ age.sty"
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count93
 \cp@tempcnt=\count94
-) (main.aux)
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algori
+thm2e.sty"
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count95
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip43
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpag
+e.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count96
+LaTeX Info: Redefining \checkoddpage on input line 45.
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\relsize\relsize.st
+y"
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip44
+\skiplinenumber=\skip45
+\skiprule=\skip46
+\skiphlne=\skip47
+\skiptext=\skip48
+\skiplength=\skip49
+\algomargin=\skip50
+\skipalgocfslide=\skip51
+\algowidth=\dimen112
+\inoutsize=\dimen113
+\inoutindent=\dimen114
+\interspacetitleruled=\dimen115
+\interspacealgoruled=\dimen116
+\interspacetitleboxruled=\dimen117
+\algocf@ruledwidth=\skip52
+\algocf@inoutbox=\box28
+\algocf@inputbox=\box29
+\AlCapSkip=\skip53
+\AlCapHSkip=\skip54
+\algoskipindent=\skip55
+\algocf@nlbox=\box30
+\algocf@hangingbox=\box31
+\algocf@untilbox=\box32
+\algocf@skipuntil=\skip56
+\algocf@capbox=\box33
+\algocf@lcaptionbox=\skip57
+\algoheightruledefault=\skip58
+\algoheightrule=\skip59
+\algotitleheightruledefault=\skip60
+\algotitleheightrule=\skip61
+\c@algocfline=\count97
+\c@algocfproc=\count98
+\c@algocf=\count99
+\algocf@algoframe=\box34
+\algocf@algobox=\box35
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
+sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count100
+\Gm@cntv=\count101
+\c@Gm@tempcnt=\count102
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks19
+
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg")) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count95
-\scratchdimen=\dimen112
-\scratchbox=\box28
-\nofMPsegments=\count96
-\nofMParguments=\count97
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count98
-\MPscratchDim=\dimen113
-\MPnumerator=\count99
-\makeMPintoPDFobject=\count100
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count103
+\scratchdimen=\dimen126
+\scratchbox=\box36
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen127
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks21
 )
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -171,11 +262,6 @@ Package etexcmds Info: Could not find \expanded.
 mds.sty"
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
-ty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -190,16 +276,50 @@ G,.JBIG2,.JB2,.eps]
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
- [1
 
-{C:/Users/niels/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(main.toc
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(122.85876pt, 368.57747pt, 122.85876pt)
+* v-part:(T,H,B)=(122.85876pt, 549.25246pt, 122.85876pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=368.57747pt
+* \textheight=549.25246pt
+* \oddsidemargin=50.58878pt
+* \evensidemargin=50.58878pt
+* \topmargin=13.58878pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 21.
+[1
+
+{C:/Users/niels/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -209,12 +329,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `main.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
@@ -222,81 +357,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 <images/screencreditslarge.png, id=17, 691.383pt x 425.1885pt>
 File: images/screencreditslarge.png Graphic file (type png)
 <use images/screencreditslarge.png>
-Package pdftex.def Info: images/screencreditslarge.png  used on input line 46.
-(pdftex.def)             Requested size: 137.9979pt x 84.86101pt.
+Package pdftex.def Info: images/screencreditslarge.png  used on input line 56.
+(pdftex.def)             Requested size: 147.42873pt x 90.66115pt.
 <images/screencreditslarge2.png, id=19, 605.8635pt x 379.4175pt>
 File: images/screencreditslarge2.png Graphic file (type png)
 <use images/screencreditslarge2.png>
-Package pdftex.def Info: images/screencreditslarge2.png  used on input line 49.
+Package pdftex.def Info: images/screencreditslarge2.png  used on input line 59.
 
-(pdftex.def)             Requested size: 137.9979pt x 86.41893pt.
+(pdftex.def)             Requested size: 147.42873pt x 92.32414pt.
 <images/diffcredits.png, id=20, 451.6875pt x 255.95625pt>
 File: images/diffcredits.png Graphic file (type png)
 <use images/diffcredits.png>
-Package pdftex.def Info: images/diffcredits.png  used on input line 52.
-(pdftex.def)             Requested size: 137.9979pt x 78.20128pt.
+Package pdftex.def Info: images/diffcredits.png  used on input line 62.
+(pdftex.def)             Requested size: 147.42873pt x 83.5441pt.
 <images/diffcredits2.png, id=21, 437.38406pt x 255.95625pt>
 File: images/diffcredits2.png Graphic file (type png)
 <use images/diffcredits2.png>
-Package pdftex.def Info: images/diffcredits2.png  used on input line 55.
-(pdftex.def)             Requested size: 137.9979pt x 80.75552pt.
+Package pdftex.def Info: images/diffcredits2.png  used on input line 65.
+(pdftex.def)             Requested size: 147.42873pt x 86.2741pt.
  [4 <./images/screencreditslarge.png> <./images/screencreditslarge2.png> <./ima
 ges/diffcredits.png> <./images/diffcredits2.png>]
 <images/straks.png, id=29, 965.40675pt x 508.299pt>
 File: images/straks.png Graphic file (type png)
 <use images/straks.png>
-Package pdftex.def Info: images/straks.png  used on input line 71.
+Package pdftex.def Info: images/straks.png  used on input line 81.
 (pdftex.def)             Requested size: 213.39566pt x 112.35353pt.
  [5 <./images/straks.png>]
 <images/imageretrieval.png, id=38, 810.6285pt x 452.28975pt>
 File: images/imageretrieval.png Graphic file (type png)
 <use images/imageretrieval.png>
-Package pdftex.def Info: images/imageretrieval.png  used on input line 95.
+Package pdftex.def Info: images/imageretrieval.png  used on input line 105.
 (pdftex.def)             Requested size: 227.62204pt x 126.99913pt.
-<images/colorhistogram.png, id=39, 578.16pt x 433.62pt>
-File: images/colorhistogram.png Graphic file (type png)
-<use images/colorhistogram.png>
-Package pdftex.def Info: images/colorhistogram.png  used on input line 109.
-(pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
+
+ []
 
 [6 <./images/imageretrieval.png>]
+<images/colorhistogram.png, id=43, 578.16pt x 433.62pt>
+File: images/colorhistogram.png Graphic file (type png)
+<use images/colorhistogram.png>
+Package pdftex.def Info: images/colorhistogram.png  used on input line 124.
+(pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
+
+ []
+
 <images/shotchange.jpg, id=44, 747.39224pt x 114.4275pt>
 File: images/shotchange.jpg Graphic file (type jpg)
 <use images/shotchange.jpg>
-Package pdftex.def Info: images/shotchange.jpg  used on input line 122.
+Package pdftex.def Info: images/shotchange.jpg  used on input line 142.
 (pdftex.def)             Requested size: 341.43306pt x 52.27411pt.
-<images/hsv.png, id=45, 297.11pt x 222.8325pt>
+[7 <./images/colorhistogram.png>]
+<images/hsv.png, id=50, 297.11pt x 222.8325pt>
 File: images/hsv.png Graphic file (type png)
 <use images/hsv.png>
-Package pdftex.def Info: images/hsv.png  used on input line 133.
+Package pdftex.def Info: images/hsv.png  used on input line 153.
 (pdftex.def)             Requested size: 142.26378pt x 106.70337pt.
- [7 <./images/colorhistogram.png> <./images/shotchange.jpg>] [8 <./images/hsv.p
-ng>] (main.bbl [9] [10]) [11] (main.aux) ) 
+ [8 <./images/shotchange.jpg> <./images/hsv.png>] [9] (main.bbl [10] [11]
+! Undefined control sequence.
+l.117 ``Faiss - facebook research.'' \url
+                                         {https://github.com/facebookresearc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [12] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 2812 strings out of 492970
- 46329 string characters out of 3126593
- 109789 words of memory out of 3000000
- 6657 multiletter control sequences out of 15000+200000
+ 4290 strings out of 492970
+ 69980 string characters out of 3126593
+ 148492 words of memory out of 3000000
+ 8106 multiletter control sequences out of 15000+200000
  8600 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,1325b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/niels/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/niels/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/n
-iels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.
-pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/niels/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/niels/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/niel
-s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
-/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (11 pages, 5416417 bytes).
+ 42i,12n,40p,1390b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/niels/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/niels/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Us
+ers/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/niels/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/niels/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nie
+ls/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+
+Output written on main.pdf (12 pages, 5424513 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,10 +5,15 @@
 \usepackage{float}
 \usepackage{subcaption}
 \usepackage{changepage}
+\usepackage[ruled,vlined]{algorithm2e}
+
+\usepackage{geometry}
+\geometry{margin=1.7in}
+
 
 \begin{document}
 
-\title{Optimizing Television Content for Video on Demand, Algorithmically Detecting Opening/Closing Credits, Recaps and Bumpers in TV Shows\'{} Video Files}
+\title{Optimizing Television Content for Video on Demand, Leveraging Image Retrieval to Detect Opening/Closing Credits, Recaps, Bumpers and Previews in TV Shows\'{} Video Files}
 \author{Master Thesis\\ \\ Niels ten Boom  \\ s4767314}
 
 \date{\vspace{-3ex}}
@@ -19,7 +24,7 @@
 \tableofcontents
 \newpage
 
-\section{Introduction}
+\section{Introduction} \label{introduction}
 Viewing rates for TV are dropping gradually while the user counts of streaming services such as Netflix and Videoland are growing year over year. This shift from TV to Video on Demand introduces new problems for broadcasters (in this case RTL), as they now have to support a hybrid form of traditional broadcasting and Video On Demand (VOD). RTL does this by putting their content on Videoland after it has aired on TV. 
 
 Video content is optimized for just one form, and currently that is TV. This means that the video content contains recaps, opening credits, bumpers (to ease a viewer into commercials) and closing credits. A viewer watching this content back-to-back may find it preferable to be able to skip these recurring segments to improve their viewing experience. Providing this functionality to users, requires metadata on where the skippable segments occur in the videos. For a large percentage of their content, such metadata has not been retained. Videoland currently hosts over 1000 different titles consisting of multiple seasons and episodes and this selection is prone to change. An automated solution that can detect these segments in videos would be very useful to solve that problem and transform the video content into a format suited for VOD. In this thesis we will explore the best methods for such an automated solution. 
@@ -27,12 +32,17 @@ Video content is optimized for just one form, and currently that is TV. This mea
 
 There is little margin for error with this solution. The accuracy of the end result should be sufficiently high enough for it to be trusted to label all of the content automatically. If that is not the case then it needs double checking by a human. Because if a part of the video gets mislabeled, a user may skip over actual content. It is critical to RTL that this does not happen.
 
-This research presents my findings on detecting recaps, opening credits, bumpers and closing credits given the video files from a TV-show. Because this being looked at from a business perspective, the solution should also be cost effective, meaning it should be efficient. The research question then reads:
+This research presents my findings on detecting recaps, opening credits, bumpers, closing credits and previews unsupervised given the video files from a TV-show. We are going to attempt to tackle this problem by using image retrieval techniques. The motivation behind this is that the general characteristic of the segments is that they reoccur. To be able to detect reoccurring parts we are going to compare similarities of frames, this should be done efficiently. Our main research question then reads:
 \newline
 \begin{adjustwidth}{0.3in}{0.3in}
-\textit{\textbf{To what extent is it possible to accurately detect recaps, opening credits, bumpers and closing credits in video files and what are the most efficient methods? \newline}}
+\textit{\textbf{Can we leverage image retrieval to accurately detect recaps, opening credits, bumpers, closing credits and previews in video files from a TV-show?\newline}}
 \end{adjustwidth}
-This thesis aims to answer aforementioned research question. The rest of this section will be used to define the different type of video classes which this research is focused on. Section \ref{relatedwork} explains all of the related work. In section \ref{data} the data is presented. Section \ref{methodology} expands on the methodology and then the produced results are presented in section \ref{results}. Lastly, the results are discussed in section \ref{discussion}.
+With the subquestions: \\
+\begin{adjustwidth}{0.3in}{0.3in}
+	\textit{\textbf{What accuracy does each image retrieval approach achieve?\newline}}\\
+	\textit{\textbf{How efficient are the methods?\newline}}
+\end{adjustwidth}
+This thesis aims to answer aforementioned research questions. The rest of this section will be used to expand on the different type of video classes which this research is focused on. Section \ref{relatedwork} explains all of the related work. In section \ref{data} the data is presented. Section \ref{methodology} expands on the methodology and then the produced results are presented in section \ref{results}. Lastly, the results are discussed in section \ref{discussion}.
 
 \subsection{Segment classes} \label{section:segmentclasses}
 In this section we will give a background on the different types of segments to be detected. What all the segment classes have in common is that they reappear (partially) in previous or future episodes. We will use this attribute for detection. 
@@ -74,7 +84,7 @@ The bumper is a part of the video that eases a viewer into the upcoming commerci
     \label{examplebumper}
 \end{figure}
 
-\subsubsection{Preview}
+\subsubsection{Previews}
 A preview is a segment at the end of an episode where an advance showing of fragments of the next episode(s) are played. Previews can typically be found in content that was created specially for broadcast TV. It gives the viewer a taste of what to expect in the next episode that will air a week later. However, this part is not of interest to a binge watcher.
 
 \subsection{Definitions and Techniques}
@@ -102,8 +112,13 @@ In the case of image retrieval the query consists of an image for which the best
 
 \textbf{Content-based image retrieval} is retrieval based on the content of the image rather than the metadata as is the case with concept-based image retrieval. Computer vision is used to evaluate the image similarity, this can be done by looking at colors, shapes, textures and more. The advantage of content based image retrieval is that it does not rely on the metadata of images.
 
-\subsubsection{Color Histograms}
-A color histogram is a representation of the distribution of colors in an image. Color histograms are a flexible and low dimensional way of representing images. A color histogram can be computed by counting the number of pixels in a certain color range, the size of this range is variable, called the bin size. The higher the bin size, the lower the dimensions of the resulting histogram. See figure \ref{fig:colorhistogram} for an example color histogram where the bin size is 1, so each color is counted. 
+\subsubsection{Feature vectors}
+A feature vector is a vector containing a numeric representation of multiple characteristics of an object. In this case the objects will be images, the frames of a video. The explanation of feature vectors for image data is not very intuitive. A more simple and intuitive example would be to construct a feature vector for a human. The features could be age and length in centimeters, where a resulting feature vector could be $\textbf{x} = [25,182]$. This individual can now be represented in 2D-space, and compared to other individuals in 2D space by calculating the distance between other points in that space.
+
+Extending this analogy to images. The similarity of images can be computed by computing the distance between their feature vectors. A low distance indicates a higher similarity. Many research in image retrieval has been done on the construction of these feature vectors. We will describe three significant methods of constructing feature vectors to represent images.
+\\\\
+\textbf{Color histograms}\\
+A color histogram is a representation of the distribution of colors in an image. Color histograms are a flexible and low dimensional way of representing images. A color histogram can be computed by counting the number of pixels in a certain color range, the size of this range is variable, called the bin size. The higher the bin size, the lower the dimensions of the resulting histogram. For example, if one chooses a bin size that is half of the intensity range. The resulting vector would have 6 dimensions, two bins for each color channel. See figure \ref{fig:colorhistogram} for an example color histogram where the bin size is 1, so each color intensity is counted. 
 
 \begin{figure}[H]
 	\includegraphics[width=8cm]{images/colorhistogram.png}
@@ -111,8 +126,13 @@ A color histogram is a representation of the distribution of colors in an image.
 	\caption{Color histograms with binsize n=1.}
 	\label{fig:colorhistogram}
 \end{figure}
-
 Color histograms are going to be used to compute image similarity to match similar frames later in this thesis.
+\\ \\
+\textbf{SIFT}\\
+Test text
+\\ \\
+\textbf{Convolutional Neural Network Features} \\
+Convolutional neural networks are very good at image classification and segmentation tasks. However it was found that using the resulting channels after the convolution layers as feature vectors also perform well at image retrieval tasks. This will be expanded upon in section \ref{relatedwork}.
 
 \subsubsection{Shot Change Detection}
 
@@ -136,7 +156,21 @@ This thesis used a method that looks at the shift in mean color in HSV space \ci
 	\label{hsvspace}
 \end{figure}
 
-The shot boundaries are classified by calculating the difference in hue, saturation and value for each frame and then from this the mean is calculated. If the mean is higher than a threshold T, then a shot boundary is marked.
+The shot boundaries are classified by calculating the difference in hue, saturation and value for each frame and then from this the mean is calculated. If the mean is higher than a threshold H, then a shot boundary is marked, refer to algorithm \ref{algorithm:shotboundary} for a pseudo-code representation.
+
+\begin{algorithm}[H] \label{algorithm:shotboundary}
+	\SetAlgoLined
+	shotBoundaries = List()\;
+	previousMeanHSV = getMeanHSV(Episode[0])\;
+	\For{frame in Episode}{
+		meanHSV = getMeanHSV(frame)\;
+		\If{abs(meanHSV - previousMeanHSV) $>$ H}{
+			shotBoundaries.add(frame)\;
+		}
+		previousMeanHSV = meanHSV\;
+	}
+	\caption{Shot boundary detection}
+\end{algorithm}
 
 \section{Related Work} \label{relatedwork}
 
@@ -158,7 +192,7 @@ Abduraman et al.\ \cite{abduraman2011unsupervised} propose a system to detect re
 
 All of the previously mentioned works in this section never cover the specific topic of segmenting the classes mentioned in section \ref{section:segmentclasses}. The methods yielded high accuracies in the range of 90\% - 95\% precision. This work aims for higher accuracies and thus will not be replicating most of the previously mentioned methodologies, however from the aforementioned papers we conclude that a large dimensionality reduction step will be necessary to efficiently process a large dataset of videos.
 
-Dimensionality reduction and efficient matching of large amounts of visual data is typically used within content based image retrieval, Zheng et al. give a very detailed summary of all the significant contributions from past years \cite{zheng2018sift}. Their summary covers three periods in image retrieval: Early methods, SIFT-based methods and CNN-based methods. Smeulders et al. present all the contributions of the early methods \cite{smeulders2000content}, these methods focused on looking at the color, texture and local geometry of images for retrieval. Not much later the Bag-of-words (BoW) model was proposed as a new method for image retrieval \cite{sivic2003video}. The advantage of this is that inverted indexes can be used for immediate retrieval of similar images. The BoW model paired with SIFT-descriptors \cite{lowe2004distinctive} as the feature vectors was used in image retrieval research for years \cite{nister2006scalable}\cite{philbin2007object}\cite{jegou2008hamming}\cite{jegou2010aggregating}\cite{jegou2012aggregating}. Since 2012 when the convolutional neural network was introduced \cite{krizhevsky2012imagenet} research switched to deep learning based methods for image retrieval \cite{babenko2014neural}]\cite{yue2015exploiting}\cite{tolias2015particular}.
+Dimensionality reduction and efficient matching of large amounts of visual data is typically used within content based image retrieval, Zheng et al. give a very detailed summary of all the significant contributions from past years \cite{zheng2018sift}. Their summary covers three periods in image retrieval: Early methods, SIFT-based methods and CNN-based methods. Smeulders et al. present all the contributions of the early methods \cite{smeulders2000content}, these methods focused on looking at the color, texture and local geometry of images for retrieval. Not much later the Bag-of-words (BoW) model was proposed as a new method for image retrieval \cite{sivic2003video}. The advantage of this is that inverted indexes can be used for immediate retrieval of similar images. The BoW model paired with SIFT-descriptors \cite{lowe2004distinctive} as the feature vectors was used in image retrieval research for years \cite{nister2006scalable}\cite{philbin2007object}\cite{jegou2008hamming}\cite{jegou2010aggregating}\cite{jegou2012aggregating}. Since 2012 when the convolutional neural network was introduced \cite{krizhevsky2012imagenet} research switched to CNN-based methods for image retrieval because they achieved better performance on several image retrieval tasks	 \cite{babenko2014neural}]\cite{yue2015exploiting}\cite{tolias2015particular}.
 
 
 \iffalse
@@ -183,8 +217,6 @@ Dimensionality reduction and efficient matching of large amounts of visual data 
 \fi
 
 
-
-
 \section{Data} \label{data}
 
 The dataset contains 81 video files originating from 18 differing seasons of tv-shows. See the appendix for a full breakdown of the data. Originally these files were in .mxf full broadcast format, this meant each file being 25GB on average. All the files were converted to 1920p .mp4 files, resulting in each file being 1 GB on average.
@@ -194,6 +226,23 @@ For each file the start and end timestamps for the recaps, opening credits and c
 These files were then manually viewed and all the relevant segments were annotated. 
 
 \section{Methodology} \label{methodology}
+We want to explore whether the problem described in section \ref{introduction} is solvable and if it is, which method scores the best in terms of accuracy and efficiency. The characteristic of all the segment classes is that they reoccur either in previous or future episodes. To match frames from one episode with other episodes, feature vectors will be constructed from the frames and the distances between these vectors will be computed and saved. 
+
+\subsection{Feature Vector Construction}
+Video generally plays at 25 frames per second, frames very close to each other should only have very slight variations. That is why only frames every 5 frames will be taken into account to greatly reduce the computing complexity. We take all the video files $E_x \in T$ and convert each file to a set of feature vectors $S_x = \{v_1, v_2, \dots, v_l\}$ with the function $f$.
+
+\[f(E_x) = \{v_1, v_2, \dots, v_l\}\]
+
+The rest of the subsections will expand on different implementations of the function $f$, how the different types of feature vectors are constructed.
+
+\subsubsection{Color Histograms}
+\subsubsection{Sift}
+\subsubsection{CNN Features}
+
+\subsection{Matching}
+
+All the resulting lists of feature vectors will be added to the index of an empty Faiss instance \cite{faiss}. Faiss is a library for efficient similarity search of dense vectors .
+
 
 \section{Results} \label{results}
 

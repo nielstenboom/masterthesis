@@ -113,4 +113,7 @@ G.~Tolias, R.~Sicre, and H.~J{\'e}gou, ``Particular object retrieval with
   integral max-pooling of cnn activations,'' {\em arXiv preprint
   arXiv:1511.05879}, 2015.
 
+\bibitem{faiss}
+``Faiss - facebook research.'' \url{https://github.com/facebookresearch/faiss}.
+
 \end{thebibliography}

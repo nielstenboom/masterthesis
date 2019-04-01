@@ -1,7 +1,9 @@
 \relax 
+\providecommand \oddpage@label [2]{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Segment classes}{3}}
-\newlabel{section:segmentclasses}{{1.1}{3}}
+\newlabel{introduction}{{1}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Segment classes}{4}}
+\newlabel{section:segmentclasses}{{1.1}{4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.1}Closing Credits}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Examples of varying types of closing credits\relax }}{4}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
@@ -11,20 +13,24 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.4}Bumpers}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Example 'Next' bumper of the dutch television show Expeditie Robinson.\relax }}{5}}
 \newlabel{examplebumper}{{2}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.5}Preview}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.5}Previews}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Definitions and Techniques}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.1}Image Retrieval}{5}}
 \citation{rajam2013survey}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Visual example of image retrieval.\relax }}{6}}
 \newlabel{fig:imageretrieval}{{3}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.2}Color Histograms}{6}}
-\citation{lienhart1998comparison}
-\citation{shao2015shot}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.2}Feature vectors}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Color histograms with binsize n=1.\relax }}{7}}
 \newlabel{fig:colorhistogram}{{4}{7}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3}Shot Change Detection}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Example of a shot change.\relax }}{7}}
-\newlabel{shotchange}{{5}{7}}
+\citation{lienhart1998comparison}
+\citation{shao2015shot}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Example of a shot change.\relax }}{8}}
+\newlabel{shotchange}{{5}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The HSV color space.\relax }}{8}}
+\newlabel{hsvspace}{{6}{8}}
+\newlabel{algorithm:shotboundary}{{1}{8}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Shot boundary detection\relax }}{8}}
 \citation{lienhart1997detection}
 \citation{gauch2006finding}
 \citation{covell2006advertisement}
@@ -32,10 +38,6 @@
 \citation{herley2006argos}
 \citation{benezeth2010unsupervised}
 \citation{abduraman2011unsupervised}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The HSV color space.\relax }}{8}}
-\newlabel{hsvspace}{{6}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{8}}
-\newlabel{relatedwork}{{2}{8}}
 \citation{zheng2018sift}
 \citation{smeulders2000content}
 \citation{sivic2003video}
@@ -49,11 +51,21 @@
 \citation{babenko2014neural}
 \citation{yue2015exploiting}
 \citation{tolias2015particular}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{9}}
+\newlabel{relatedwork}{{2}{9}}
+\citation{faiss}
 \bibstyle{ieeetr}
 \bibdata{references}
 \bibcite{rajam2013survey}{1}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Data}{9}}
-\newlabel{data}{{3}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Data}{10}}
+\newlabel{data}{{3}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{10}}
+\newlabel{methodology}{{4}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Feature Vector Construction}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Color Histograms}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Sift}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}CNN Features}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Matching}{10}}
 \bibcite{lienhart1998comparison}{2}
 \bibcite{shao2015shot}{3}
 \bibcite{lienhart1997detection}{4}
@@ -64,14 +76,12 @@
 \bibcite{benezeth2010unsupervised}{9}
 \bibcite{abduraman2011unsupervised}{10}
 \bibcite{zheng2018sift}{11}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{10}}
-\newlabel{methodology}{{4}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{10}}
-\newlabel{results}{{5}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{10}}
-\newlabel{discussion}{{6}{10}}
 \bibcite{smeulders2000content}{12}
 \bibcite{sivic2003video}{13}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{11}}
+\newlabel{results}{{5}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{11}}
+\newlabel{discussion}{{6}{11}}
 \bibcite{lowe2004distinctive}{14}
 \bibcite{nister2006scalable}{15}
 \bibcite{philbin2007object}{16}
@@ -82,3 +92,4 @@
 \bibcite{babenko2014neural}{21}
 \bibcite{yue2015exploiting}{22}
 \bibcite{tolias2015particular}{23}
+\bibcite{faiss}{24}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  1 APR 2019 11:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  2 APR 2019 13:34
 entering extended mode
 **./main.tex
 (main.tex
@@ -353,6 +353,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
+
+LaTeX Warning: Reference `data' on page 3 undefined on input line 45.
+
 [3]
 <images/screencreditslarge.png, id=17, 691.383pt x 425.1885pt>
 File: images/screencreditslarge.png Graphic file (type png)
@@ -420,7 +423,21 @@ File: images/hsv.png Graphic file (type png)
 <use images/hsv.png>
 Package pdftex.def Info: images/hsv.png  used on input line 153.
 (pdftex.def)             Requested size: 142.26378pt x 106.70337pt.
- [8 <./images/shotchange.jpg> <./images/hsv.png>] [9] (main.bbl [10] [11]
+
+
+Package caption Warning: \label without proper reference on input line 161.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `algorithm:shotboundary' on page 8 undefined on input 
+line 159.
+
+[8 <./images/shotchange.jpg> <./images/hsv.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
+
+ []
+
+[9] [10] (main.bbl [11] [12]
 ! Undefined control sequence.
 l.117 ``Faiss - facebook research.'' \url
                                          {https://github.com/facebookresearc...
@@ -430,32 +447,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) [12] (main.aux) ) 
+) [13] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4290 strings out of 492970
- 69980 string characters out of 3126593
- 148492 words of memory out of 3000000
- 8106 multiletter control sequences out of 15000+200000
+ 4291 strings out of 492970
+ 69998 string characters out of 3126593
+ 148527 words of memory out of 3000000
+ 8107 multiletter control sequences out of 15000+200000
  8600 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,40p,1390b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/niels/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/niels/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Us
-ers/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/niels/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/niels/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nie
-ls/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on main.pdf (12 pages, 5424513 bytes).
+ 42i,11n,40p,1390b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/niels/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/niels/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/n
+iels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/niels/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/niels/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (13 pages, 5425414 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

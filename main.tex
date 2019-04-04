@@ -141,7 +141,7 @@ Shot detection is a technique that can be used on videos to determine shot bound
 \begin{figure}[H]
 	\includegraphics[width=12cm]{images/shotchange.jpg}
 	\centering
-	\caption{Example of a shot change.}
+	\caption{Example of a shot change within 4 frames of a video.}
 	\label{shotchange}
 \end{figure}
 
@@ -158,7 +158,7 @@ This thesis used a method that looks at the shift in mean color in HSV space \ci
 
 The shot boundaries are classified by calculating the difference in hue, saturation and value for each frame and then from this the mean is calculated. If the mean is higher than a threshold H, then a shot boundary is marked, refer to algorithm \ref{algorithm:shotboundary} for a pseudo-code representation.
 
-\begin{algorithm}[H] \label{algorithm:shotboundary}
+\begin{algorithm}[h] \label{algorithm:shotboundary}
 	\SetAlgoLined
 	shotBoundaries = List()\;
 	previousMeanHSV = getMeanHSV(Episode[0])\;
@@ -191,6 +191,7 @@ With the unsupervised methods the authors typically do a dimensionality reductio
 Abduraman et al.\ \cite{abduraman2011unsupervised} propose a system to detect repeated sequences in streams by performing a DCT operation on all of the frames in the stream and then use a micro clustering technique to detect repeated sequences. They were also able to link the trailers to their respective programs that occur at a later point in the stream.
 
 All of the previously mentioned works in this section never cover the specific topic of segmenting the classes mentioned in section \ref{section:segmentclasses}. The methods yielded high accuracies in the range of 90\% - 95\% precision. This work aims for higher accuracies and thus will not be replicating most of the previously mentioned methodologies, however from the aforementioned papers we conclude that a large dimensionality reduction step will be necessary to efficiently process a large dataset of videos.
+\\
 
 Dimensionality reduction and efficient matching of large amounts of visual data is typically used within content based image retrieval, Zheng et al. give a very detailed summary of all the significant contributions from past years \cite{zheng2018sift}. Their summary covers three periods in image retrieval: Early methods, SIFT-based methods and CNN-based methods. Smeulders et al. present all the contributions of the early methods \cite{smeulders2000content}, these methods focused on looking at the color, texture and local geometry of images for retrieval. Not much later the Bag-of-words (BoW) model was proposed as a new method for image retrieval \cite{sivic2003video}. The advantage of this is that inverted indexes can be used for immediate retrieval of similar images. The BoW model paired with SIFT-descriptors \cite{lowe2004distinctive} as the feature vectors was used in image retrieval research for years \cite{nister2006scalable}\cite{philbin2007object}\cite{jegou2008hamming}\cite{jegou2010aggregating}\cite{jegou2012aggregating}. Since 2012 when the convolutional neural network was introduced \cite{krizhevsky2012imagenet} research switched to CNN-based methods for image retrieval because they achieved better performance on several image retrieval tasks	 \cite{babenko2014neural}]\cite{yue2015exploiting}\cite{tolias2015particular}.
 
@@ -217,16 +218,13 @@ Dimensionality reduction and efficient matching of large amounts of visual data 
 \fi
 
 
-\section{Data} \label{data}
-
-The dataset contains 81 video files originating from 18 differing seasons of tv-shows. See the appendix for a full breakdown of the data. Originally these files were in .mxf full broadcast format, this meant each file being 25GB on average. All the files were converted to 1920p .mp4 files, resulting in each file being 1 GB on average.
-
-For each file the start and end timestamps for the recaps, opening credits and closing credits were annotated in the HH:MM:SS format in a CSV file, so that it could be loaded effectively.
-
-These files were then manually viewed and all the relevant segments were annotated. 
-
 \section{Methodology} \label{methodology}
-We want to explore whether the problem described in section \ref{introduction} is solvable and if it is, which method scores the best in terms of accuracy and efficiency. The characteristic of all the segment classes is that they reoccur either in previous or future episodes. To match frames from one episode with other episodes, feature vectors will be constructed from the frames and the distances between these vectors will be computed and saved. 
+We want to explore whether the problem described in section \ref{introduction} is solvable and if it is, which method scores the best in terms of accuracy and efficiency. The characteristic of all the segment classes is that they reoccur either in previous or future episodes. To match frames from one episode with other episodes, feature vectors will be constructed from the frames and the distances between these vectors will be computed and saved.
+
+\subsection{Data}
+The dataset contains 63 video files originating from 16 differing seasons of tv-shows. Of most seasons only the first three episodes will be looked at. It can be argued that this amount of data is on the low side, however we expect that this amount will be sufficient to determine whether one of the methods is feasible to deploy on a larger scale. Originally these files were in .mxf full broadcast format, this meant each file being 25GB on average. All the files were converted to 1920p .mp4 files, resulting in each file being 1 GB on average.
+
+For each file the start and end timestamps for the recaps, opening credits, closing credits and previews were annotated in the HH:MM:SS format in a CSV file, so that it could be loaded effectively.
 
 \subsection{Feature Vector Construction}
 Video generally plays at 25 frames per second, frames very close to each other should only have very slight variations. That is why only frames every 5 frames will be taken into account to greatly reduce the computing complexity. We take all the video files $E_x \in T$ and convert each file to a set of feature vectors $S_x = \{v_1, v_2, \dots, v_l\}$ with the function $f$.
@@ -236,7 +234,10 @@ Video generally plays at 25 frames per second, frames very close to each other s
 The rest of the subsections will expand on different implementations of the function $f$, how the different types of feature vectors are constructed.
 
 \subsubsection{Color Histograms}
-\subsubsection{Sift}
+For the construction of the color histograms the pixels intensities in each channel (Red, Green, Blue (RGB)) are counted and binned according to a specified bin size. All these bins will be concatenated to result in a feature vector, the size of the feature vector is a result of the chosen bin size.
+
+\subsubsection{SIFT}
+
 \subsubsection{CNN Features}
 
 \subsection{Matching}

@@ -58,6 +58,16 @@ A.~W. Smeulders, M.~Worring, S.~Santini, A.~Gupta, and R.~Jain, ``Content-based
   image retrieval at the end of the early years,'' {\em IEEE Transactions on
   Pattern Analysis \& Machine Intelligence}, no.~12, pp.~1349--1380, 2000.
 
+\bibitem{yu2002color}
+H.~Yu, M.~Li, H.-J. Zhang, and J.~Feng, ``Color texture moments for
+  content-based image retrieval,'' in {\em Proceedings. International
+  Conference on Image Processing}, vol.~3, pp.~929--932, IEEE, 2002.
+
+\bibitem{manjunath1996texture}
+B.~S. Manjunath and W.-Y. Ma, ``Texture features for browsing and retrieval of
+  image data,'' {\em IEEE Transactions on pattern analysis and machine
+  intelligence}, vol.~18, no.~8, pp.~837--842, 1996.
+
 \bibitem{sivic2003video}
 J.~Sivic and A.~Zisserman, ``Video google: A text retrieval approach to object
   matching in videos,'' in {\em null}, p.~1470, IEEE, 2003.
@@ -113,7 +123,19 @@ G.~Tolias, R.~Sicre, and H.~J{\'e}gou, ``Particular object retrieval with
   integral max-pooling of cnn activations,'' {\em arXiv preprint
   arXiv:1511.05879}, 2015.
 
+\bibitem{beyer1999nearest}
+K.~Beyer, J.~Goldstein, R.~Ramakrishnan, and U.~Shaft, ``When is “nearest
+  neighbor” meaningful?,'' in {\em International conference on database
+  theory}, pp.~217--235, Springer, 1999.
+
+\bibitem{ffmpeg}
+``Ffmpeg.'' \url{http://ffmpeg.org}.
+
 \bibitem{faiss}
+J.~Johnson, M.~Douze, and H.~J{\'e}gou, ``Billion-scale similarity search with
+  gpus,'' {\em arXiv preprint arXiv:1702.08734}, 2017.
+
+\bibitem{faiss-github}
 ``Faiss - facebook research.'' \url{https://github.com/facebookresearch/faiss}.
 
 \end{thebibliography}

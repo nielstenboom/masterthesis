@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  18 APR 2019 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  15 MAY 2019 12:13
 entering extended mode
 **./main.tex
 (main.tex
@@ -459,89 +459,113 @@ File: images/straks.png Graphic file (type png)
 Package pdftex.def Info: images/straks.png  used on input line 86.
 (pdftex.def)             Requested size: 213.39566pt x 112.35353pt.
  [5 <./images/straks.png>]
-<images/imageretrieval.png, id=38, 810.6285pt x 452.28975pt>
-File: images/imageretrieval.png Graphic file (type png)
-<use images/imageretrieval.png>
-Package pdftex.def Info: images/imageretrieval.png  used on input line 110.
-(pdftex.def)             Requested size: 227.62204pt x 126.99913pt.
-
-[6 <./images/imageretrieval.png>]
-<images/distanceexample.png, id=43, 557.6835pt x 404.10976pt>
-File: images/distanceexample.png Graphic file (type png)
-<use images/distanceexample.png>
-Package pdftex.def Info: images/distanceexample.png  used on input line 129.
-(pdftex.def)             Requested size: 227.62204pt x 164.93996pt.
-<images/colorhistogram.png, id=44, 347.49825pt x 266.1945pt>
-File: images/colorhistogram.png Graphic file (type png)
-<use images/colorhistogram.png>
-Package pdftex.def Info: images/colorhistogram.png  used on input line 140.
-(pdftex.def)             Requested size: 227.62204pt x 174.36882pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--144
-
- []
-
-[7 <./images/distanceexample.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 145--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--152
-
- []
-
-<images/shotchange.jpg, id=51, 747.39224pt x 114.4275pt>
+<images/shotchange.jpg, id=38, 747.39224pt x 114.4275pt>
 File: images/shotchange.jpg Graphic file (type jpg)
 <use images/shotchange.jpg>
-Package pdftex.def Info: images/shotchange.jpg  used on input line 158.
+Package pdftex.def Info: images/shotchange.jpg  used on input line 108.
 (pdftex.def)             Requested size: 341.43306pt x 52.27411pt.
-[8 <./images/colorhistogram.png> <./images/shotchange.jpg>]
-<images/hsv.png, id=55, 297.11pt x 222.8325pt>
-File: images/hsv.png Graphic file (type png)
-<use images/hsv.png>
-Package pdftex.def Info: images/hsv.png  used on input line 169.
-(pdftex.def)             Requested size: 142.26378pt x 106.70337pt.
- [9 <./images/hsv.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 210--212
+
+[6 <./images/shotchange.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
-[10] [11]
-<images/thesisdiagram.png, id=66, 917.4275pt x 625.33624pt>
+[7]
+<images/imageretrieval.png, id=47, 810.6285pt x 452.28975pt>
+File: images/imageretrieval.png Graphic file (type png)
+<use images/imageretrieval.png>
+Package pdftex.def Info: images/imageretrieval.png  used on input line 187.
+(pdftex.def)             Requested size: 227.62204pt x 126.99913pt.
+<images/mostlywhite.png, id=48, 7.52812pt x 7.52812pt>
+File: images/mostlywhite.png Graphic file (type png)
+<use images/mostlywhite.png>
+Package pdftex.def Info: images/mostlywhite.png  used on input line 204.
+(pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
+<images/allblack.png, id=49, 7.52812pt x 7.52812pt>
+File: images/allblack.png Graphic file (type png)
+<use images/allblack.png>
+Package pdftex.def Info: images/allblack.png  used on input line 207.
+(pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
+<images/mostlyblack.png, id=50, 7.52812pt x 7.52812pt>
+File: images/mostlyblack.png Graphic file (type png)
+<use images/mostlyblack.png>
+Package pdftex.def Info: images/mostlyblack.png  used on input line 210.
+(pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
+ [8 <./images/imageretrieval.png>]
+<images/distanceexample.png, id=55, 545.78906pt x 381.67593pt>
+File: images/distanceexample.png Graphic file (type png)
+<use images/distanceexample.png>
+Package pdftex.def Info: images/distanceexample.png  used on input line 223.
+(pdftex.def)             Requested size: 227.62204pt x 159.17879pt.
+ [9 <./images/mostlywhite.png> <./images/allblack.png> <./images/mostlyblack.pn
+g> <./images/distanceexample.png>]
+<images/colorhistogram.png, id=61, 347.49825pt x 266.1945pt>
+File: images/colorhistogram.png Graphic file (type png)
+<use images/colorhistogram.png>
+Package pdftex.def Info: images/colorhistogram.png  used on input line 241.
+(pdftex.def)             Requested size: 227.62204pt x 174.36882pt.
+
+[10]
+<images/filters.png, id=65, 264.99pt x 405.31425pt>
+File: images/filters.png Graphic file (type png)
+<use images/filters.png>
+Package pdftex.def Info: images/filters.png  used on input line 252.
+(pdftex.def)             Requested size: 142.26378pt x 217.59859pt.
+ [11 <./images/colorhistogram.png>] [12 <./images/filters.png>] [13]
+<images/thesisdiagram.png, id=77, 917.4275pt x 625.33624pt>
 File: images/thesisdiagram.png Graphic file (type png)
 <use images/thesisdiagram.png>
-Package pdftex.def Info: images/thesisdiagram.png  used on input line 267.
+Package pdftex.def Info: images/thesisdiagram.png  used on input line 301.
 (pdftex.def)             Requested size: 614.295pt x 418.73456pt.
- [12] (main.bbl [13 <./images/thesisdiagram.png>] [14]) [15] (main.aux) ) 
+
+[14 <./images/thesisdiagram.png>] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 371--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
+
+ []
+
+(main.bbl [16] [17] [18]) [19] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 5451 strings out of 492970
- 89102 string characters out of 3126593
- 167983 words of memory out of 3000000
- 9225 multiletter control sequences out of 15000+200000
+ 5468 strings out of 492970
+ 89530 string characters out of 3126593
+ 168005 words of memory out of 3000000
+ 9239 multiletter control sequences out of 15000+200000
  8768 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,77p,1394b,457s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Us
-ers/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/niels/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/niels/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Us
-ers/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr17.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/niels/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/niels/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ni
-els/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb
->
-Output written on main.pdf (15 pages, 5509999 bytes).
+ 42i,12n,77p,1420b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/niels/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/niels/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/
+niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
+.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/niels/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/niels/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ni
+els/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+<C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr7.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/niels/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (19 pages, 5453055 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 140 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

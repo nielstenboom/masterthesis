@@ -6,17 +6,22 @@
 \contentsline {subsubsection}{\numberline {1.1.4}Bumpers}{5}
 \contentsline {subsubsection}{\numberline {1.1.5}Previews}{5}
 \contentsline {subsection}{\numberline {1.2}Definitions and Techniques}{5}
-\contentsline {subsubsection}{\numberline {1.2.1}Image Retrieval}{6}
-\contentsline {subsubsection}{\numberline {1.2.2}Feature vectors}{6}
-\contentsline {subsubsection}{\numberline {1.2.3}Shot Change Detection}{8}
-\contentsline {section}{\numberline {2}Related Work}{9}
-\contentsline {section}{\numberline {3}Methodology}{11}
-\contentsline {subsection}{\numberline {3.1}Data}{11}
-\contentsline {subsection}{\numberline {3.2}Feature Vector Construction}{11}
-\contentsline {subsubsection}{\numberline {3.2.1}Color Histograms}{12}
-\contentsline {subsubsection}{\numberline {3.2.2}Local Color Moments}{12}
-\contentsline {subsubsection}{\numberline {3.2.3}CNN Features}{12}
-\contentsline {subsection}{\numberline {3.3}Matching}{12}
-\contentsline {section}{\numberline {4}Results}{13}
-\contentsline {section}{\numberline {5}Discussion}{13}
-\contentsline {section}{\numberline {6}References}{13}
+\contentsline {subsubsection}{\numberline {1.2.1}Shot Change Detection}{6}
+\contentsline {section}{\numberline {2}Related Work}{6}
+\contentsline {section}{\numberline {3}Image Retrieval}{8}
+\contentsline {subsection}{\numberline {3.1}Feature vectors}{8}
+\contentsline {subsection}{\numberline {3.2}Color Histograms}{10}
+\contentsline {subsection}{\numberline {3.3}Color Texture Moments}{11}
+\contentsline {subsection}{\numberline {3.4}CNN Features}{12}
+\contentsline {section}{\numberline {4}Methodology}{12}
+\contentsline {subsection}{\numberline {4.1}Data}{13}
+\contentsline {subsection}{\numberline {4.2}Feature Vector Construction}{13}
+\contentsline {subsubsection}{\numberline {4.2.1}Color Histograms}{13}
+\contentsline {subsubsection}{\numberline {4.2.2}Local Color Texture Moments}{14}
+\contentsline {subsubsection}{\numberline {4.2.3}CNN Features}{14}
+\contentsline {subsection}{\numberline {4.3}Matching and Detection}{14}
+\contentsline {subsubsection}{\numberline {4.3.1}Bumper Detection}{15}
+\contentsline {section}{\numberline {5}Results}{15}
+\contentsline {subsection}{\numberline {5.1}Bumper detection}{16}
+\contentsline {section}{\numberline {6}Discussion}{16}
+\contentsline {section}{\numberline {7}References}{17}

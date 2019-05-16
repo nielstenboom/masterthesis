@@ -1,9 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{rajam2013survey}
-F.~Rajam and S.~Valli, ``A survey on content based image retrieval,'' {\em Life
-  Science Journal}, vol.~10, no.~2, pp.~2475--2487, 2013.
-
 \bibitem{lienhart1998comparison}
 R.~W. Lienhart, ``Comparison of automatic shot boundary detection algorithms,''
   in {\em Storage and Retrieval for Image and Video Databases VII}, vol.~3656,
@@ -49,8 +45,8 @@ A.~E. Abduraman, S.-A. Berrani, and B.~Merialdo, ``An unsupervised approach for
   Conference on Interactive TV and Video}, pp.~123--126, ACM, 2011.
 
 \bibitem{zheng2018sift}
-L.~Zheng, Y.~Yang, and Q.~Tian, ``Sift meets cnn: A decade survey of instance
-  retrieval,'' {\em IEEE transactions on pattern analysis and machine
+L.~Zheng, Y.~Yang, and Q.~Tian, ``{SIFT} meets {CNN}: A decade survey of
+  instance retrieval,'' {\em IEEE transactions on pattern analysis and machine
   intelligence}, vol.~40, no.~5, pp.~1224--1244, 2018.
 
 \bibitem{smeulders2000content}
@@ -123,19 +119,30 @@ G.~Tolias, R.~Sicre, and H.~J{\'e}gou, ``Particular object retrieval with
   integral max-pooling of cnn activations,'' {\em arXiv preprint
   arXiv:1511.05879}, 2015.
 
+\bibitem{rajam2013survey}
+F.~Rajam and S.~Valli, ``A survey on content based image retrieval,'' {\em Life
+  Science Journal}, vol.~10, no.~2, pp.~2475--2487, 2013.
+
+\bibitem{yu2002colortexturemoments}
+H.~Yu, M.~Li, H.-J. Zhang, and J.~Feng, ``Color texture moments for
+  content-based image retrieval,'' in {\em Proceedings. International
+  Conference on Image Processing}, vol.~3, pp.~929--932, IEEE, 2002.
+
 \bibitem{beyer1999nearest}
 K.~Beyer, J.~Goldstein, R.~Ramakrishnan, and U.~Shaft, ``When is “nearest
   neighbor” meaningful?,'' in {\em International conference on database
   theory}, pp.~217--235, Springer, 1999.
 
 \bibitem{ffmpeg}
-``Ffmpeg.'' \url{http://ffmpeg.org}.
+``{FF}mpeg.'' \url{http://ffmpeg.org}.
 
 \bibitem{faiss}
 J.~Johnson, M.~Douze, and H.~J{\'e}gou, ``Billion-scale similarity search with
-  gpus,'' {\em arXiv preprint arXiv:1702.08734}, 2017.
+  {GPU}s,'' {\em arXiv preprint arXiv:1702.08734}, 2017.
 
 \bibitem{faiss-github}
-``Faiss - facebook research.'' \url{https://github.com/facebookresearch/faiss}.
+``Faiss, a library for efficient similarity search and clustering of dense
+  vectors - facebook research.''
+  \url{https://github.com/facebookresearch/faiss}.
 
 \end{thebibliography}

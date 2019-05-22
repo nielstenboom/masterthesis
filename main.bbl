@@ -136,13 +136,18 @@ K.~Beyer, J.~Goldstein, R.~Ramakrishnan, and U.~Shaft, ``When is “nearest
 \bibitem{ffmpeg}
 ``{FF}mpeg.'' \url{http://ffmpeg.org}.
 
+\bibitem{rmac-github}
+``Re-implementation of regional maximum activations of convolutions ({RMAC})
+  feature extractor for {K}eras.''
+  \url{https://github.com/noagarcia/keras_rmac}.
+
 \bibitem{faiss}
 J.~Johnson, M.~Douze, and H.~J{\'e}gou, ``Billion-scale similarity search with
   {GPU}s,'' {\em arXiv preprint arXiv:1702.08734}, 2017.
 
 \bibitem{faiss-github}
 ``Faiss, a library for efficient similarity search and clustering of dense
-  vectors - facebook research.''
+  vectors - {F}acebook {R}esearch.''
   \url{https://github.com/facebookresearch/faiss}.
 
 \end{thebibliography}

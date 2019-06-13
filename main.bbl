@@ -133,6 +133,10 @@ K.~Beyer, J.~Goldstein, R.~Ramakrishnan, and U.~Shaft, ``When is “nearest
   neighbor” meaningful?,'' in {\em International conference on database
   theory}, pp.~217--235, Springer, 1999.
 
+\bibitem{own-github}
+``Recurring content detector, implementation used for the experiments.''
+  \url{https://github.com/nielstenboom/recurring-content-detector}.
+
 \bibitem{ffmpeg}
 ``{FF}mpeg.'' \url{http://ffmpeg.org}.
 

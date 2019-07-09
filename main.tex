@@ -37,7 +37,7 @@
 \newpage
 
 \begin{abstract}
-This thesis presents research on image retrieval-based approaches for recurring content detection in Video On Demand (VOD) TV-shows. The method utilizes feature vectors constructed from video frames and an image retrieval framework to efficiently compare frame similarity across TV-show episodes, these frame similarities are then used to determine recurring parts. With such methods the best precision score achieved was 0.884 and the best recall score achieved was 0.892 for recurring content, an altered experimental setup for bumper detection achieved a best precision score of 0.611 and a best recall score of 0.979. With these results we present novel research for unsupervised detection of recurring content in VOD shows.
+This thesis presents research on image retrieval-based approaches for recurring content detection in Video On Demand (VOD) TV-shows. The method utilizes feature vectors constructed from video frames and an image retrieval framework to efficiently compare frame similarity across TV-show episodes, these frame similarities are then used to detect recurring parts. A best precision score of 0.884 at 0.687 recall and a best recall score of 0.892 at 0.748 precision were achieved. An altered experimental setup for bumper detection achieved a best precision score of 0.611 at 0.917 recall and a best recall score of 0.979 at 0.288 precision. With these results we present novel research for unsupervised detection of recurring content in VOD shows.
 \end{abstract}
 \newpage
 
@@ -47,9 +47,9 @@ This thesis presents research on image retrieval-based approaches for recurring 
 \section{Introduction} \label{introduction}
 Viewing rates for TV are dropping gradually while the number of users of streaming services such as Netflix and Videoland are growing rapidly year over year. This shift from TV to Video on Demand introduces new problems for broadcasters, as they now have to support a hybrid form of traditional broadcasting and Video On Demand (VOD). In this thesis we consider a method that could help to improve the user experience for VOD.
 
-Video content is optimized for just one form, and currently that is TV. This means that the video content may contain recurring content consisting of: recaps, opening credits, bumpers (to ease a viewer into commercials), closing credits and previews. A viewer watching this content back-to-back may find it preferable to be able to skip this recurring content to improve their viewing experience. Providing this functionality to users, requires metadata on where the skippable content occurs in the videos. For a large percentage of content, such metadata has not been retained. Videoland currently hosts over 1000 different titles consisting of multiple seasons and episodes and this selection is always changing. An automated solution that can detect this content in videos would be very useful to transform the video content into a format suited for VOD. In this thesis we will explore methods for such an automated solution.
+Video content is optimized for just one form, and currently that is broadcast television. This means that the video content may contain recurring content consisting of: recaps, opening credits, bumpers (to ease a viewer into commercials), closing credits and previews. A viewer watching this content back-to-back may find it preferable to be able to skip this recurring content to improve their viewing experience. Providing this functionality to users, requires metadata on where the skippable content occurs in the videos. For a large percentage of content, such metadata has not been retained. Videoland currently hosts over 1000 different titles consisting of multiple seasons and episodes and this selection is always changing. An automated solution that can detect this content in videos would be very useful to transform the video content into a format suited for VOD. In this thesis we will explore methods for such an automated solution.
 
-There is little margin for error with this solution. The accuracy of the end result should be sufficiently high enough for it to be trusted to label all of the content automatically. If that is not the case then it needs double checking by a human. Because if a part of the video gets mislabeled, a user may skip over actual content. It is critical to RTL that this does not happen.
+There is little margin for error with this solution. The accuracy of the end result should be sufficiently high for it to be trusted to label all of the content automatically. If that is not the case, it needs double checking by a human, because if a part of the video gets mislabeled, a user may skip over actual content. It is critical to RTL that this does not happen.
 
 This thesis presents research on unsupervised detection of recaps, opening credits, bumpers, closing credits and previews given the video files from a TV-show. We are going to attempt to tackle this problem by using image retrieval techniques. The motivation behind this is that the overlapping characteristic of the segments is that they reoccur. To be able to detect recurring content we are going to compare similarities of frames across content, this should be done efficiently and accurately, both attributes are important in image retrieval research. Our main research question then is:
 \newline
@@ -62,10 +62,10 @@ With the subquestions: \\
 	\textit{\textbf{How accurate is each image retrieval approach?\newline}}\\
 	\textit{\textbf{How can the best method be utilized in practice?\newline}}
 \end{adjustwidth}
-This thesis aims to answer aforementioned research questions. Our hypothesis is that such a method works very well. The rest of this section will be used to expand on the different type of video classes which this research is focused on. Section \ref{relatedwork} explains all of the related work. In Section \ref{section:imageretrieval} image retrieval and the used methods are expanded upon. Section \ref{methodology} describes the data and methodology and then the produced results are presented in Section \ref{results}. Lastly, the results are discussed in section \ref{discussion} and a conclusion is drawn in Section \ref{conclusion}.
+This thesis aims to answer aforementioned research questions. Our hypothesis is that such a method may achieve a level of effectiveness that allows practical application at RTL. The rest of this section will be used to expand on the different type of video classes which this research is focused on. Section \ref{relatedwork} discusses related work. Section \ref{section:imageretrieval} elaborates on the used methods for image retrieval. Section \ref{methodology} describes the data and methodology and then the produced results are presented in Section \ref{results}. Lastly, the results are discussed in section \ref{discussion} and a conclusion is drawn in Section \ref{conclusion}.
 
 \subsection{Recurring Content Classes} \label{section:segmentclasses}
-In this section we will give a background on the different types of content to be detected. What all the content classes have in common is that they (partially) reappear in previous or future episodes or as is the case with bumpers: that the content reappears within the episode itself. We will use this attribute for the detection. Example frame grabs from each of the content classes can be viewed in Figure \ref{fig:introductionexamples}.
+In this section we discuss the different types of content to be detected. What all the content classes have in common is that they (partially) reappear in previous or future episodes or, as is the case with bumpers; that the content reappears within the episode itself. We will use this attribute for the detection. Example frame grabs from each of the content classes can be viewed in Figure \ref{fig:introductionexamples}.
 
 \begin{figure}[h]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/introduction_examples.jpg}}
@@ -83,7 +83,7 @@ The opening credits of a TV-show are generally the same for all of the episodes 
 The bumper is a part of the video that eases a viewer into the upcoming commercial. Most of the times it has a voice over and text on screen saying: 'Next' (or the dutch translation of 'next') and footage of what is to be expected after the commercial break is shown.
 
 \subsubsection{Previews}
-A preview is a segment at the end of an episode where an advance showing of fragments of the next episode(s) are played. Previews can typically be found in content that was created specially for broadcast TV. It gives the viewer a taste of what to expect in the next episode that will air a week later. These previews may contain overlayed credits of people who helped in the production of the show.
+A preview is a segment at the end of an episode playing an advance showing of fragments of the next episode(s) are played. Previews can typically be found in content that was created specially for broadcast TV. It gives the viewer a taste of what to expect in the next episode that will air a week later. These previews may contain overlayed credits of people who helped in the production of the show.
 
 \subsubsection{Closing Credits}
 The closing credits at the end of a video mostly consist of scrolling text and there is little variation between the frames. In these texts everybody related to the production of the video is mentioned. In general the frames all have a black background with white text. But backgrounds can also vary, therefore a solution that simply looks for black and white would not suffice.
@@ -107,7 +107,7 @@ Shot detection is a technique that can be used on videos to determine shot bound
 	\label{shotchange}
 \end{figure}
 
-Shot detection is going to be used and thus will we expand on it. Many has been done related to shot detection \cite{lienhart1998comparison} and many techniques have been proposed. 
+Shot detection is going to be used and thus will we expand on it. A lot of research has been done related to shot detection \cite{lienhart1998comparison} and many techniques have been proposed. 
 
 We use a method that looks at the shift in mean color in HSV space \cite{shao2015shot}. HSV (Hue, Saturation, Value) color space is a more intuitive color mixing model compared to RGB (Red, Green, Blue) color space. Because one can change a value in either of the three values in HSV and expect what the new color is going to look like. This is almost impossible for RGB because for this same color change to happen, you need to change all three red, green and blue values to result in the same color space.
 
@@ -138,7 +138,7 @@ Fingerprint methods set up a database of fingerprints of known commercials or re
 %fingerprint methodes geven vaak ook methode voor repeated sequence detection maar met onvoldoende precisie
 
 %feature based
-The feature-based methods detect commercials based on extracted video features. Wang et al.\ \cite{wang2008multimodal} fuse the results of audio scene changes and textual content similarity between shots to segment programs including commercials.
+Feature-based methods detect commercials based on extracted video features. Wang et al.\ \cite{wang2008multimodal} fuse the results of audio scene changes and textual content similarity between shots to segment programs including commercials.
 
 %clustering
 With the unsupervised methods the authors typically do a dimensionality reduction operation and then try to find repeated sequences or commercials with clustering methods. Herley et al.\ \cite{herley2006argos} convert the stream with a Discrete Cosine Transform (DCT) to reduce dimensionality and then propose an extensive probability framework to detect repeated sequences. Benezeth et al.\ \cite{benezeth2010unsupervised} use the Electronic Programme Guide (EPG) in addition to the dimensionality reduction to detect program boundaries.
@@ -146,10 +146,10 @@ With the unsupervised methods the authors typically do a dimensionality reductio
 %vergelijkbare dingen
 Abduraman et al.\ \cite{abduraman2011unsupervised} propose a system to detect repeated sequences in streams by performing a DCT operation on all of the frames in the stream and then use a micro clustering technique to detect repeated sequences. They were also able to link the trailers to their respective programs that occur at a later point in the stream.
 
-All of the previously mentioned works in this section never cover the specific topic of segmenting the classes mentioned in Section \ref{section:segmentclasses} and use other properties only available to broadcast streams such as the EPG. The methods also focused on recurring content detection are exclusively based on detection of moderate to long sequences, it does not cover short recurring sequences stitched together such as a recap. The methods yielded high accuracies in the range of 90\% - 95\% precision, also most research is from many years ago and work that focuses on repeated sequence detection in broadcast streams do not vary much in methodology. This work is not focused on broadcast streams and aims for higher accuracies and thus will not be replicating the previously mentioned methodologies, however from the aforementioned papers we conclude that a large dimensionality reduction step will be necessary to efficiently process a large visual data set.
+All of the previously mentioned works in this section never cover the specific topic of segmenting the classes mentioned in Section \ref{section:segmentclasses} and use properties only available to broadcast streams such as the EPG. The methods also focused on recurring content detection are exclusively based on detection of moderate to long sequences, it does not cover short recurring sequences stitched together such as a recap. The methods yielded high accuracies in the range of 90\% - 95\% precision, also most research is from many years ago and work that focuses on repeated sequence detection in broadcast streams do not vary much in methodology. This work is not focused on broadcast streams and aims for higher accuracies, we will not replicate the previously mentioned methodologies, however from the aforementioned papers we conclude that a large dimensionality reduction step will be necessary to efficiently process a large visual data set.
 \\
 
-Dimensionality reduction and efficient matching of large amounts of visual data is important within content based image retrieval, Zheng et al. give a very detailed summary of all the significant contributions from past years \cite{zheng2018sift}. Their summary covers three periods in image retrieval: Early methods, SIFT-based methods and Convolutional Neural Network (CNN) based methods. Smeulders et al. present all the contributions of the early methods \cite{smeulders2000content}, these methods focused on looking at the color, texture and local geometry of images for retrieval \cite{yu2002color,manjunath1996texture}. Not much later the Bag-of-words (BoW) model was proposed as a new method for image retrieval \cite{sivic2003video}. The advantage of this is that inverted indexes can be used for immediate retrieval of similar images. The BoW model paired with SIFT-descriptors \cite{lowe2004distinctive} as the feature vectors was used in image retrieval research for years \cite{nister2006scalable,philbin2007object,jegou2008hamming,jegou2010aggregating,jegou2012aggregating}. Since 2012 when the convolutional neural network was introduced \cite{krizhevsky2012imagenet} research switched to CNN-based methods for image retrieval because they achieved better performance on several image retrieval tasks	 \cite{babenko2014neural,yue2015exploiting, tolias2015particular}.
+Dimensionality reduction and efficient matching of large amounts of visual data is important within content based image retrieval, Zheng et al. give a detailed summary of the most significant contributions from past years \cite{zheng2018sift}. Their summary covers three periods in image retrieval: Early methods, SIFT-based methods and Convolutional Neural Network (CNN) based methods. Smeulders et al. present all the contributions of the early methods \cite{smeulders2000content}, these methods focused on looking at the color, texture and local geometry of images for retrieval \cite{yu2002color,manjunath1996texture}. Not much later the Bag-of-words (BoW) model was proposed as a new method for image retrieval \cite{sivic2003video}. The advantage of this is that inverted indexes can be used for immediate retrieval of similar images. The BoW model paired with SIFT-descriptors \cite{lowe2004distinctive} as the feature vectors was used in image retrieval research for years \cite{nister2006scalable,philbin2007object,jegou2008hamming,jegou2010aggregating,jegou2012aggregating}. Since 2012 when the convolutional neural network was introduced \cite{krizhevsky2012imagenet} research switched to CNN-based methods for image retrieval because they achieved better performance on a variety of image retrieval tasks	 \cite{babenko2014neural,yue2015exploiting, tolias2015particular}.
 
 
 \iffalse
@@ -193,7 +193,7 @@ In the case of image retrieval the query consists of an image for which the best
 \subsection{Feature vectors}
 A feature vector is a vector containing a numeric representation of multiple characteristics of an object. In this case the objects are images, the frames of a video. To illustrate feature vectors for images, a small example is given. Consider the following three images of 10 by 10 pixels consisting only of black or white pixels in Figure \ref{featurevectorimages}.
 
-If we would like to measure the image similarity between these pictures then we could do this on a pixel-per-pixel basis, this could work for low dimensional images. But comparing HD images consisting of 1920 pixels by 1080 pixels would require massive computation and will require extensive logic to handle small deviations between images. This can be resolved by creating feature vectors to represent the images. A representation for these example images could be the number of black and white pixels in the image. This results in the feature vector $\textbf{x} = [\#\;white\;pixels, \#\;black\;pixels]^T$. This vector can now be represented in 2D-space, and compared to other vectors in 2D space by calculating the distance between other points in that space. The distance is computed by calculating the euclidean distance between each vector.
+If we would like to measure the image similarity between these pictures then we could do this on a pixel-per-pixel basis, while this could work for low dimensional images, comparing HD images consisting of 1920 pixels by 1080 pixels would require massive computation and will require extensive logic to handle small deviations between images. This can be resolved by creating feature vectors to represent the images. A representation for these example images could be the number of black and white pixels in the image, resulting in the feature vector; $\textbf{x} = [\#\;white\;pixels, \#\;black\;pixels]^T$. This vector can now be represented in 2D-space, and compared to other vectors in 2D space by calculating the distance between other points in that space. The distance could for example be computed by calculating the euclidean distance between each vector.
 
 \[d(\textbf{p,q}) = \sqrt{(p_1 - q_1)^2 + \dots + (p_n - q_n)^2} \]
 
@@ -201,10 +201,10 @@ If we would like to measure the image similarity between these pictures then we 
 	\centering
 	\begin{subfigure}[b]{0.2\textwidth}
 		\includegraphics[width=\textwidth]{images/mostlywhite.png}
-	\end{subfigure}
+	\end{subfigure}\hfill
 	\begin{subfigure}[b]{0.2\textwidth}
 		\includegraphics[width=\textwidth]{images/allblack.png}
-	\end{subfigure}
+	\end{subfigure}\hfill
 	\begin{subfigure}[b]{0.2\textwidth}
 		\includegraphics[width=\textwidth]{images/mostlyblack.png}
 	\end{subfigure}
@@ -212,7 +212,7 @@ If we would like to measure the image similarity between these pictures then we 
 	\label{featurevectorimages}
 \end{figure}
 
-In Figure \ref{fig:distanceexample} the plotted feature vectors and the distances between them can be viewed. Example images 2 and 3 are the most alike because the distance between them is the smallest. Which seems in line with a visual inspection.
+Figure \ref{fig:distanceexample} plots the feature vectors and the distances between. Example images 2 and 3 are the most alike because the distance between them is the smallest. Which seems in line with a visual inspection.
 
 \begin{figure}[H]
 	\includegraphics[width=8cm]{images/distanceexample.png}
@@ -221,7 +221,7 @@ In Figure \ref{fig:distanceexample} the plotted feature vectors and the distance
 	\label{fig:distanceexample}
 \end{figure}
 
-The similarity of images can be retrieved by computing the distance between their feature vectors. A low distance indicates a higher similarity. Counting the number of black and white pixels for the construction of feature vectors is not a very robust method. Many research in image retrieval has been done on the construction of these feature vectors for achieving the best retrieval results. Part of this research is determining the best method for the construction of the image feature vectors to apply for our problem. We will expand on the methods that are going to be explored. 
+The similarity of images can be determined by computing the distance between their feature vectors. A low distance indicates a higher similarity. Counting the number of black and white pixels for the construction of feature vectors is not a very robust method, a lot of research in image retrieval focused on the construction of alternative feature vectors to achieve better retrieval results most in line with human judgment. Part of this thesis is determining the best method for the construction of the image feature vectors to apply for our problem. We will expand on the methods that are going to be explored. 
 
 %Misschien uitwijden over local en global descriptors
 As mentioned in Section \ref{relatedwork}, Zheng et al. \cite{zheng2018sift} outline three significant periods in image retrieval, the early methods focused on global descriptors mostly based on color and texture. These global descriptors were not good at handling image changes in illumination, translation, occlusion and truncation. This gave rise to local descriptors based SIFT methods until recently CNN-descriptors became the most popular. 
@@ -238,7 +238,7 @@ A color histogram is a representation of the distribution of colors in an image.
 	\caption{\textbf{Color histogram with a large binsize (binsize=128) for illustration.}}
 	\label{fig:colorhistogram}
 \end{figure}
-Color histograms are global descriptors because they describe the image on a global level.
+Color histograms are global descriptors because they describe the image on a global level. Viewing a frame as a color histogram loses a lot of detail, but for the specific problem recurring video content, this may be sufficient.
 
 \subsection{Color Texture Moments}
 Color texture moments as proposed by Yu et al. \cite{yu2002colortexturemoments} are a low-level feature descriptor that integrates both color and texture characteristics of an image. An image is converted from RGB to HSV color space, and on each color map a 2d convolution is applied for each 3x3 filter shown in Figure \ref{fig:filters}.
@@ -262,12 +262,12 @@ We want to explore whether we can detect recurring content unsupervised and if s
 
 The characteristic of all the segment classes is that they reoccur either in previous or future episodes. To match frames from one episode with other episodes, feature vectors were constructed from the frames and the distances between these vectors were computed and saved. If a part of the video consecutively has matching feature vectors from previous or future episodes, then that part is labeled as a recurring segment. It is therefore important that the resulting feature vectors do not mismatch between actual recurring content and content that looks alike. Methods chosen for construction of the feature vectors should therefore not result in feature vectors of very high dimensionality, because this has proven to reduce the distance between the farthest and closest points \cite{beyer1999nearest}, likely diminishing the distinctive property of the feature vectors that is needed.
 
-We will do separate experiments for the bumper detection as they require a different approach for detection because they only contain recurring content from within the episode itself.
+We will do separate experiments for the bumper detection as they require a different approach for detection because they only contain recurring content from within an episode itself.
 
 All of the experiments were coded in Python and the code of the experiments can be found on Github \cite{own-github}.
 %and executed on AWS m4.2xlarge instances
 \subsection{Data}
-The data set contains 80 video files originating from 16 different seasons of tv-shows, amounting to around 50 hours of content. Only for three of these seasons do we use the full array of episodes, from the rest of the seasons, only the first three episodes will be looked at to have a more varied data set. Originally these files were in .mxf full broadcast format, this meant each file being 25GB on average. All the files were converted to MP4 files having a width of 320 pixels width and the length to maintain the aspect ratio. The resizing step was done to drastically decrease the computing time needed. The conversion was done with FFmpeg \cite{ffmpeg}.
+The data set contains 80 video files originating from 16 different seasons of tv-shows, amounting to around 50 hours of content. Only for three of these seasons do we use the full array of episodes, from the rest of the seasons, only the first three episodes will be looked at to have a more varied data set at a reasonable amount of human judgement. Originally these files were in \textit{.mxf} full broadcast format, this meant each file being 25GB on average. All the files were converted to MP4 files having a width of 320 pixels width and the length to maintain the aspect ratio. The resizing step was done to drastically decrease the computing time needed. The conversion was done with FFmpeg \cite{ffmpeg}.
 
 For each file the start and end timestamps for the recaps, opening credits, bumpers, closing credits and previews were annotated in HH:MM:SS format in a CSV file, so that it could be loaded and compared effectively.
 
@@ -291,10 +291,10 @@ For each file the start and end timestamps for the recaps, opening credits, bump
 	\label{table:datastatistics}
 \end{table}
 
-Table \ref{table:datastatistics} shows the distribution of the different recurring content classes. It can be noted that the classes are not in balance, the recurring content is weighted towards recaps and opening credits. Recurring content consists of 4.9\% of the total content, thus with a perfect method, that is the percentage of time we could save of people watching the content back-to-back.
+Table \ref{table:datastatistics} shows the distribution of the different recurring content classes. It can be noted that the classes are not in balance; the recurring content is weighted towards recaps and opening credits. Recurring content consists of 4.9\% of the total content, thus with a perfect method, that is the percentage of time we could save of people watching the content back-to-back.
 
 \subsection{Feature Vector Construction}
-Video usually plays at 25 frames per second, frames very close to each other should only have very slight variations. That is why frames every 3 frames or just shotboundary frames will be taken into account to reduce the computing complexity. We take all the video files of a season $E_x \in T$ and convert each file to a set of feature vectors $S_x = \{v_1, v_2, \dots, v_l\}$ with the function $f$.
+Video plays at 25 frames per second, and neighboring frames usually vary slightly. That is why frames every 3 frames or just shotboundary frames will be taken into account to reduce the computing complexity. We take all the video files of a season $E_x \in T$ and convert each file to a set of feature vectors $S_x = \{v_1, v_2, \dots, v_l\}$ with the function $f$.
 
 \[f(E_x) = S_x = \{v_1, v_2, \dots, v_l\}\]
 
@@ -445,7 +445,7 @@ From the results of the bumper detection we notice there is a difference in resu
 With these results we set the first steps towards a fully automated solution for detection of recurrent content. Many research has been done on broadcast streams, this thesis presents the first results on VOD content. Based on the results of the experiments it becomes clear that feature vectors constructed via a CNN have the most potential for the application to our problem.
 
 %limitations: what can't the results tell us
-The experiments were mostly performed on the first three episodes of a single season. However, an end-solution would take a whole season into account. Also, sometimes the recurring content spans across different seasons (recapping the previous season in the first episode for example), our experiments did not take this attribute into account.
+The experiments were mostly performed on the first three episodes of a single season. However, an end-solution would take a whole season into account. Also, sometimes the recurring content spans across different seasons (recapping the previous season in the first episode for example), our experiments did not take this attribute into account. We only took the visual data into account by looking at video frames, not utilizing the audio data. Future studies could incorporate audio data into the methodology to see if that improves the results.
 
 The bumper detection is based on how RTL inserts its bumpers into content. With our experiments, we did not test if our methodology also applies to the bumpers of other publishers of commercial content.
 

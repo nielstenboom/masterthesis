@@ -46,8 +46,8 @@ A.~E. Abduraman, S.-A. Berrani, and B.~Merialdo, ``An unsupervised approach for
 
 \bibitem{zheng2018sift}
 L.~Zheng, Y.~Yang, and Q.~Tian, ``{SIFT} meets {CNN}: A decade survey of
-  instance retrieval,'' {\em IEEE transactions on pattern analysis and machine
-  intelligence}, vol.~40, no.~5, pp.~1224--1244, 2018.
+  instance retrieval,'' {\em IEEE transactions on {P}attern {A}nalysis and
+  {M}achine {I}ntelligence}, vol.~40, no.~5, pp.~1224--1244, 2018.
 
 \bibitem{smeulders2000content}
 A.~W. Smeulders, M.~Worring, S.~Santini, A.~Gupta, and R.~Jain, ``Content-based
@@ -61,12 +61,13 @@ H.~Yu, M.~Li, H.-J. Zhang, and J.~Feng, ``Color texture moments for
 
 \bibitem{manjunath1996texture}
 B.~S. Manjunath and W.-Y. Ma, ``Texture features for browsing and retrieval of
-  image data,'' {\em IEEE Transactions on pattern analysis and machine
-  intelligence}, vol.~18, no.~8, pp.~837--842, 1996.
+  image data,'' {\em IEEE transactions on {P}attern {A}nalysis and {M}achine
+  {I}ntelligence}, vol.~18, no.~8, pp.~837--842, 1996.
 
 \bibitem{sivic2003video}
 J.~Sivic and A.~Zisserman, ``Video google: A text retrieval approach to object
-  matching in videos,'' in {\em null}, p.~1470, IEEE, 2003.
+  matching in videos,'' in {\em IEEE International Conference on Computer
+  Vision}, p.~1470, IEEE, 2003.
 
 \bibitem{lowe2004distinctive}
 D.~G. Lowe, ``Distinctive image features from scale-invariant keypoints,'' {\em
@@ -96,7 +97,7 @@ H.~J{\'e}gou, M.~Douze, C.~Schmid, and P.~P{\'e}rez, ``Aggregating local
 \bibitem{jegou2012aggregating}
 H.~Jegou, F.~Perronnin, M.~Douze, J.~S{\'a}nchez, P.~Perez, and C.~Schmid,
   ``Aggregating local image descriptors into compact codes,'' {\em IEEE
-  transactions on pattern analysis and machine intelligence}, vol.~34, no.~9,
+  Transactions on Pattern Analysis and Machine Intelligence}, vol.~34, no.~9,
   pp.~1704--1716, 2012.
 
 \bibitem{krizhevsky2012imagenet}
@@ -116,7 +117,7 @@ J.~Yue-Hei~Ng, F.~Yang, and L.~S. Davis, ``Exploiting local features from deep
 
 \bibitem{tolias2015particular}
 G.~Tolias, R.~Sicre, and H.~J{\'e}gou, ``Particular object retrieval with
-  integral max-pooling of cnn activations,'' {\em arXiv preprint
+  integral max-pooling of {CNN} activations,'' {\em arXiv preprint
   arXiv:1511.05879}, 2015.
 
 \bibitem{rajam2013survey}

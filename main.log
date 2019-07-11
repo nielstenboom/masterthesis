@@ -1,21 +1,22 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  9 JUL 2019 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  11 JUL 2019 15:27
 entering extended mode
 **./main.tex
 (main.tex
 LaTeX2e <2018-04-01> patch level 5
-("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -56,7 +57,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count88
+\c@float@type=\count89
 \float@exts=\toks17
 \float@box=\box26
 \@float@everytoks=\toks18
@@ -82,23 +83,23 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen110
 \caption@hangindent=\dimen111
 )
-\c@caption@flags=\count89
-\c@ContinuedFloat=\count90
+\c@caption@flags=\count90
+\c@ContinuedFloat=\count91
 Package caption Info: float package is loaded.
 )
-\c@subfigure=\count91
-\c@subtable=\count92
+\c@subfigure=\count92
+\c@subtable=\count93
 )
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\changepage\changep
 age.sty"
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count93
-\cp@tempcnt=\count94
+\c@cp@cntr=\count94
+\cp@tempcnt=\count95
 )
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algori
 thm2e.sty"
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count95
+\c@AlgoLine=\count96
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -108,7 +109,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpag
 e.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count96
+\c@checkoddpage=\count97
 LaTeX Info: Redefining \checkoddpage on input line 45.
 )
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
@@ -148,9 +149,9 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip59
 \algotitleheightruledefault=\skip60
 \algotitleheightrule=\skip61
-\c@algocfline=\count97
-\c@algocfproc=\count98
-\c@algocf=\count99
+\c@algocfline=\count98
+\c@algocfproc=\count99
+\c@algocf=\count100
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
 ) ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
@@ -174,9 +175,9 @@ Package ifvtex Info: VTeX not detected.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count100
-\Gm@cntv=\count101
-\c@Gm@tempcnt=\count102
+\Gm@cnth=\count101
+\Gm@cntv=\count102
+\c@Gm@tempcnt=\count103
 \Gm@bindingoffset=\dimen118
 \Gm@wd@mp=\dimen119
 \Gm@odd@mp=\dimen120
@@ -192,10 +193,10 @@ cfg"))
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocbibind\tocbibin
 d.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
-Package tocbibind Info: The document has section divisions on input line 50.
+Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
-Package tocbibind Note: Using section or other style headings.
+Package tocbibind Note: Using chapter style headings, unless overridden.
 
 )
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjustbo
@@ -213,7 +214,7 @@ tex"
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
 )
-\XKV@depth=\count103
+\XKV@depth=\count104
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.
@@ -253,7 +254,7 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box37
-\sift@deathcycles=\count104
+\sift@deathcycles=\count105
 \@vwid@loff=\dimen138
 \@vwid@roff=\dimen139
 ))
@@ -315,8 +316,8 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen140
-\Hy@linkcounter=\count105
-\Hy@pagecounter=\count106
+\Hy@linkcounter=\count106
+\Hy@pagecounter=\count107
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
@@ -324,7 +325,7 @@ File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count107
+\Hy@SavedSpaceFactor=\count108
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
@@ -337,10 +338,10 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count108
+\c@Hy@tempcnt=\count109
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen141
-\Fld@menulength=\count109
+\Fld@menulength=\count110
 \Field@Width=\dimen142
 \Fld@charsize=\dimen143
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -352,17 +353,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count110
-\c@Item=\count111
-\c@Hfootnote=\count112
+\Hy@abspage=\count111
+\c@Item=\count112
+\c@Hfootnote=\count113
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
 ef"
 File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count113
-\c@bookmark@seq@number=\count114
+\Fld@listcount=\count114
+\c@bookmark@seq@number=\count115
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
@@ -391,38 +392,39 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+\@float@every@table=\toks22
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
+\scratchcounter=\count116
 \scratchdimen=\dimen144
 \scratchbox=\box38
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count118
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count119
 \MPscratchDim=\dimen145
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks24
 )
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -478,7 +480,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 33.
 
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -488,25 +490,30 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count121
+\c@section@level=\count122
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 37.
+(Font)              <12> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 37.
+(Font)              <8> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 37.
+(Font)              <6> on input line 41.
  [1
 
-{C:/Users/niels/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (main.t
-oc
+{C:/Users/niels/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]pdfTeX warni
+ng (ext4): destination with the same identifier (name{page.1}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 \end{abstract}
+                    [1] (main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -515,155 +522,188 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \newpage
+              [1
+
+]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+[2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
-
- []
-
-[4]
-<images/introduction_examples.jpg, id=186, 895.09406pt x 138.5175pt>
+<images/introduction_examples.jpg, id=153, 895.09406pt x 138.5175pt>
 File: images/introduction_examples.jpg Graphic file (type jpg)
 <use images/introduction_examples.jpg>
 Package pdftex.def Info: images/introduction_examples.jpg  used on input line 7
-1.
+5.
 (pdftex.def)             Requested size: 614.295pt x 95.06567pt.
- [5 <./images/introduction_examples.jpg>]
-<images/shotchange.jpg, id=193, 747.39224pt x 114.4275pt>
+[3 <./images/introduction_examples.jpg>]
+<images/shotchange.jpg, id=162, 747.39224pt x 114.4275pt>
 File: images/shotchange.jpg Graphic file (type jpg)
 <use images/shotchange.jpg>
-Package pdftex.def Info: images/shotchange.jpg  used on input line 104.
+Package pdftex.def Info: images/shotchange.jpg  used on input line 108.
 (pdftex.def)             Requested size: 341.43306pt x 52.27411pt.
- [6 <./images/shotchange.jpg>]
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+ [4] [5 <./images/shotchange.jpg>]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
-<images/imageretrieval.png, id=245, 810.6285pt x 452.28975pt>
+[6
+
+] [7]
+Chapter 3.
+<images/imageretrieval.png, id=243, 810.6285pt x 452.28975pt>
 File: images/imageretrieval.png Graphic file (type png)
 <use images/imageretrieval.png>
-Package pdftex.def Info: images/imageretrieval.png  used on input line 183.
+Package pdftex.def Info: images/imageretrieval.png  used on input line 187.
 (pdftex.def)             Requested size: 227.62204pt x 126.99913pt.
-[8]
-<images/mostlywhite.png, id=269, 7.52812pt x 7.52812pt>
+[8
+
+ <./images/imageretrieval.png>]
+<images/mostlywhite.png, id=254, 7.52812pt x 7.52812pt>
 File: images/mostlywhite.png Graphic file (type png)
 <use images/mostlywhite.png>
-Package pdftex.def Info: images/mostlywhite.png  used on input line 203.
+Package pdftex.def Info: images/mostlywhite.png  used on input line 207.
 (pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
-<images/allblack.png, id=270, 7.52812pt x 7.52812pt>
+<images/allblack.png, id=255, 7.52812pt x 7.52812pt>
 File: images/allblack.png Graphic file (type png)
 <use images/allblack.png>
-Package pdftex.def Info: images/allblack.png  used on input line 206.
+Package pdftex.def Info: images/allblack.png  used on input line 210.
 (pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
-<images/mostlyblack.png, id=271, 7.52812pt x 7.52812pt>
+<images/mostlyblack.png, id=256, 7.52812pt x 7.52812pt>
 File: images/mostlyblack.png Graphic file (type png)
 <use images/mostlyblack.png>
-Package pdftex.def Info: images/mostlyblack.png  used on input line 209.
+Package pdftex.def Info: images/mostlyblack.png  used on input line 213.
 (pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
- [9 <./images/imageretrieval.png>]
-<images/distanceexample.png, id=282, 545.78906pt x 381.67593pt>
+<images/distanceexample.png, id=258, 545.78906pt x 381.67593pt>
 File: images/distanceexample.png Graphic file (type png)
 <use images/distanceexample.png>
-Package pdftex.def Info: images/distanceexample.png  used on input line 218.
+Package pdftex.def Info: images/distanceexample.png  used on input line 222.
 (pdftex.def)             Requested size: 227.62204pt x 159.17879pt.
- [10 <./images/mostlywhite.png> <./images/allblack.png> <./images/mostlyblack.p
-ng> <./images/distanceexample.png>]
-<images/colorhistogram.png, id=293, 347.49825pt x 266.1945pt>
+ [9 <./images/mostlywhite.png> <./images/allblack.png> <./images/mostlyblack.pn
+g>]
+<images/colorhistogram.png, id=270, 347.49825pt x 266.1945pt>
 File: images/colorhistogram.png Graphic file (type png)
 <use images/colorhistogram.png>
-Package pdftex.def Info: images/colorhistogram.png  used on input line 236.
+Package pdftex.def Info: images/colorhistogram.png  used on input line 240.
 (pdftex.def)             Requested size: 227.62204pt x 174.36882pt.
-<images/filters.png, id=296, 264.99pt x 405.31425pt>
+ [10 <./images/distanceexample.png>]
+<images/filters.png, id=279, 264.99pt x 405.31425pt>
 File: images/filters.png Graphic file (type png)
 <use images/filters.png>
-Package pdftex.def Info: images/filters.png  used on input line 247.
+Package pdftex.def Info: images/filters.png  used on input line 251.
 (pdftex.def)             Requested size: 142.26378pt x 217.59859pt.
 
 [11 <./images/colorhistogram.png>] [12 <./images/filters.png>]
-Overfull \hbox (0.83978pt too wide) in paragraph at lines 272--273
+Chapter 4.
+[13
+
+]
+Overfull \hbox (0.83978pt too wide) in paragraph at lines 276--277
 []\OT1/cmr/m/n/10 For each file the start and end times-tamps for the re-caps, 
 open-ing cred-its, bumpers,
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13] [14]
-<images/thesisdiagram.png, id=334, 599.23875pt x 1121.18875pt>
+[14]
+<images/thesisdiagram.png, id=316, 599.23875pt x 1121.18875pt>
 File: images/thesisdiagram.png Graphic file (type png)
 <use images/thesisdiagram.png>
-Package pdftex.def Info: images/thesisdiagram.png  used on input line 330.
+Package pdftex.def Info: images/thesisdiagram.png  used on input line 334.
 (pdftex.def)             Requested size: 368.57747pt x 689.6211pt.
- [15]
+ [15] [16]
 Overfull \vbox (1.96336pt too high) has occurred while \output is active []
 
 
-[16 <./images/thesisdiagram.png>] [17]
-<images/evaluation.png, id=361, 578.16pt x 212.795pt>
+[17 <./images/thesisdiagram.png>] [18]
+Chapter 5.
+<images/evaluation.png, id=348, 578.16pt x 212.795pt>
 File: images/evaluation.png Graphic file (type png)
 <use images/evaluation.png>
-Package pdftex.def Info: images/evaluation.png  used on input line 360.
+Package pdftex.def Info: images/evaluation.png  used on input line 364.
 (pdftex.def)             Requested size: 368.57747pt x 135.6558pt.
- [18 <./images/evaluation.png>]
-<images/precision-recall.png, id=370, 523.20468pt x 499.8675pt>
+[19
+
+]
+<images/precision-recall.png, id=356, 523.20468pt x 499.8675pt>
 File: images/precision-recall.png Graphic file (type png)
 <use images/precision-recall.png>
-Package pdftex.def Info: images/precision-recall.png  used on input line 392.
+Package pdftex.def Info: images/precision-recall.png  used on input line 396.
 (pdftex.def)             Requested size: 313.92523pt x 299.9228pt.
- [19 <./images/precision-recall.png>]
-<images/evaluation-bumpers.png, id=379, 578.16pt x 209.78375pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/evaluation-bumpers.png, id=359, 578.16pt x 209.78375pt>
 File: images/evaluation-bumpers.png Graphic file (type png)
 <use images/evaluation-bumpers.png>
-Package pdftex.def Info: images/evaluation-bumpers.png  used on input line 408.
+Package pdftex.def Info: images/evaluation-bumpers.png  used on input line 412.
 
 (pdftex.def)             Requested size: 368.57747pt x 133.73616pt.
- [20 <./images/evaluation-bumpers.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 453--455
+[20 <./images/evaluation.png>] [21 <./images/precision-recall.png>] [22 <./imag
+es/evaluation-bumpers.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 449--466
 
  []
 
-[21] (main.bbl [22] [23])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 479.
- [24]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 479.
+[23]
+Chapter 6.
+(main.bbl [24
+
+]
+Chapter 7.
+[25
+
+] [26])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 479.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 479.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7032A97E7E86A6A6983B0F57E1362865;1943.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 479.
+(rerunfilecheck)             Checksum: F9A40901EE4834AA57AD776FAC2583D1;1471.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
- 9442 strings out of 492970
- 148769 string characters out of 3126593
- 259725 words of memory out of 3000000
- 13089 multiletter control sequences out of 15000+200000
- 9375 words of font info for 33 fonts, out of 3000000 for 9000
+ 9459 strings out of 492970
+ 148788 string characters out of 3126593
+ 259289 words of memory out of 3000000
+ 13103 multiletter control sequences out of 15000+200000
+ 10587 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,77p,1421b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
@@ -687,9 +727,9 @@ ublic/amsfonts/cm/cmsy10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/niels/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/niels/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (24 pages, 1837870 bytes).
+Output written on main.pdf (29 pages, 1835018 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 107 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 

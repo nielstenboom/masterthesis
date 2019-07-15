@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  15 JUL 2019 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  15 JUL 2019 20:38
 entering extended mode
 **./main.tex
 (main.tex
@@ -393,14 +393,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 22.
 \@float@every@table=\toks22
- (main.aux
-
-LaTeX Warning: Label `algorithm:shotboundary' multiply defined.
-
-
-LaTeX Warning: Label `algorithm:shotboundary' multiply defined.
-
-)
+ (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -570,30 +563,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
-<images/context_recaps.png, id=159, 776.9025pt x 253.54726pt>
+<images/context_recaps.png, id=158, 776.9025pt x 253.54726pt>
 File: images/context_recaps.png Graphic file (type png)
 <use images/context_recaps.png>
 Package pdftex.def Info: images/context_recaps.png  used on input line 78.
 (pdftex.def)             Requested size: 614.295pt x 200.48195pt.
 [3]
-<images/context_openingcredits.png, id=169, 773.289pt x 247.52475pt>
+<images/context_openingcredits.png, id=168, 773.289pt x 247.52475pt>
 File: images/context_openingcredits.png Graphic file (type png)
 <use images/context_openingcredits.png>
 Package pdftex.def Info: images/context_openingcredits.png  used on input line 
 87.
 (pdftex.def)             Requested size: 614.295pt x 196.63771pt.
  [4 <./images/context_recaps.png> <./images/context_openingcredits.png>]
-<images/context_bumpers.png, id=180, 767.86874pt x 94.55325pt>
+<images/context_bumpers.png, id=179, 767.86874pt x 94.55325pt>
 File: images/context_bumpers.png Graphic file (type png)
 <use images/context_bumpers.png>
 Package pdftex.def Info: images/context_bumpers.png  used on input line 96.
 (pdftex.def)             Requested size: 614.295pt x 75.64702pt.
-<images/context_previews.png, id=182, 778.107pt x 248.72925pt>
+<images/context_previews.png, id=181, 778.107pt x 248.72925pt>
 File: images/context_previews.png Graphic file (type png)
 <use images/context_previews.png>
 Package pdftex.def Info: images/context_previews.png  used on input line 105.
 (pdftex.def)             Requested size: 614.295pt x 196.3725pt.
-<images/context_closingcredits.png, id=184, 778.70924pt x 253.54726pt>
+<images/context_closingcredits.png, id=183, 778.70924pt x 253.54726pt>
 File: images/context_closingcredits.png Graphic file (type png)
 <use images/context_closingcredits.png>
 Package pdftex.def Info: images/context_closingcredits.png  used on input line 
@@ -611,14 +604,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 [7
 
 ]
-<images/shotchange.jpg, id=241, 747.39224pt x 114.4275pt>
+<images/shotchange.jpg, id=240, 747.39224pt x 114.4275pt>
 File: images/shotchange.jpg Graphic file (type jpg)
 <use images/shotchange.jpg>
 Package pdftex.def Info: images/shotchange.jpg  used on input line 155.
 (pdftex.def)             Requested size: 341.43306pt x 52.27411pt.
- [8 <./images/shotchange.jpg>] [9]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./images/shotchange.jpg>] [9]
 Chapter 3.
-<images/imageretrieval.png, id=275, 810.6285pt x 452.28975pt>
+<images/imageretrieval.png, id=274, 810.6285pt x 452.28975pt>
 File: images/imageretrieval.png Graphic file (type png)
 <use images/imageretrieval.png>
 Package pdftex.def Info: images/imageretrieval.png  used on input line 209.
@@ -626,42 +623,42 @@ Package pdftex.def Info: images/imageretrieval.png  used on input line 209.
 [10
 
  <./images/imageretrieval.png>]
-<images/mostlywhite.png, id=285, 7.52812pt x 7.52812pt>
+<images/mostlywhite.png, id=284, 7.52812pt x 7.52812pt>
 File: images/mostlywhite.png Graphic file (type png)
 <use images/mostlywhite.png>
 Package pdftex.def Info: images/mostlywhite.png  used on input line 229.
 (pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
-<images/allblack.png, id=286, 7.52812pt x 7.52812pt>
+<images/allblack.png, id=285, 7.52812pt x 7.52812pt>
 File: images/allblack.png Graphic file (type png)
 <use images/allblack.png>
 Package pdftex.def Info: images/allblack.png  used on input line 232.
 (pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
-<images/mostlyblack.png, id=287, 7.52812pt x 7.52812pt>
+<images/mostlyblack.png, id=286, 7.52812pt x 7.52812pt>
 File: images/mostlyblack.png Graphic file (type png)
 <use images/mostlyblack.png>
 Package pdftex.def Info: images/mostlyblack.png  used on input line 235.
 (pdftex.def)             Requested size: 73.71436pt x 73.75992pt.
-<images/distanceexample.png, id=289, 545.78906pt x 381.67593pt>
+<images/distanceexample.png, id=288, 545.78906pt x 381.67593pt>
 File: images/distanceexample.png Graphic file (type png)
 <use images/distanceexample.png>
 Package pdftex.def Info: images/distanceexample.png  used on input line 244.
 (pdftex.def)             Requested size: 227.62204pt x 159.17879pt.
  [11 <./images/mostlywhite.png> <./images/allblack.png> <./images/mostlyblack.p
 ng>]
-<images/colorhistogram.png, id=302, 347.49825pt x 266.1945pt>
+<images/colorhistogram.png, id=301, 347.49825pt x 266.1945pt>
 File: images/colorhistogram.png Graphic file (type png)
 <use images/colorhistogram.png>
 Package pdftex.def Info: images/colorhistogram.png  used on input line 262.
 (pdftex.def)             Requested size: 227.62204pt x 174.36882pt.
  [12 <./images/distanceexample.png>]
-<images/filters.png, id=311, 264.99pt x 405.31425pt>
+<images/filters.png, id=310, 264.99pt x 405.31425pt>
 File: images/filters.png Graphic file (type png)
 <use images/filters.png>
 Package pdftex.def Info: images/filters.png  used on input line 273.
 (pdftex.def)             Requested size: 142.26378pt x 217.59859pt.
 
 [13 <./images/colorhistogram.png>]
-<images/convnet.png, id=321, 469.755pt x 109.3686pt>
+<images/convnet.png, id=320, 469.755pt x 109.3686pt>
 File: images/convnet.png Graphic file (type png)
 <use images/convnet.png>
 Package pdftex.def Info: images/convnet.png  used on input line 285.
@@ -681,7 +678,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
-<images/thesisdiagram.png, id=372, 599.23875pt x 1121.18875pt>
+<images/thesisdiagram.png, id=371, 599.23875pt x 1121.18875pt>
 File: images/thesisdiagram.png Graphic file (type png)
 <use images/thesisdiagram.png>
 Package pdftex.def Info: images/thesisdiagram.png  used on input line 372.
@@ -690,74 +687,77 @@ Package pdftex.def Info: images/thesisdiagram.png  used on input line 372.
 Overfull \vbox (1.96336pt too high) has occurred while \output is active []
 
 
-[20 <./images/thesisdiagram.png>] [21] [22] [23] [24]
+[20 <./images/thesisdiagram.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21] [22] [23]
 Chapter 5.
-[25
+[24
 
 ]
 <images/evaluation.png, id=414, 578.16pt x 212.795pt>
 File: images/evaluation.png Graphic file (type png)
 <use images/evaluation.png>
-Package pdftex.def Info: images/evaluation.png  used on input line 507.
+Package pdftex.def Info: images/evaluation.png  used on input line 508.
 (pdftex.def)             Requested size: 368.57747pt x 135.6558pt.
 <images/precision-recall.png, id=415, 523.20468pt x 499.8675pt>
 File: images/precision-recall.png Graphic file (type png)
 <use images/precision-recall.png>
-Package pdftex.def Info: images/precision-recall.png  used on input line 539.
+Package pdftex.def Info: images/precision-recall.png  used on input line 540.
 (pdftex.def)             Requested size: 313.92523pt x 299.9228pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26 <./images/evaluation.png>]
+[25 <./images/evaluation.png>]
 <images/evaluation-bumpers.png, id=426, 578.16pt x 209.78375pt>
 File: images/evaluation-bumpers.png Graphic file (type png)
 <use images/evaluation-bumpers.png>
-Package pdftex.def Info: images/evaluation-bumpers.png  used on input line 555.
+Package pdftex.def Info: images/evaluation-bumpers.png  used on input line 556.
 
 (pdftex.def)             Requested size: 368.57747pt x 133.73616pt.
- [27 <./images/precision-recall.png>] [28 <./images/evaluation-bumpers.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 592--609
+ [26 <./images/precision-recall.png>] [27 <./images/evaluation-bumpers.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 593--610
 
  []
 
-[29]
+[28]
 Chapter 6.
-(main.bbl [30
+(main.bbl [29
 
 ]
 Chapter 7.
-[31
+[30
 
-] [32]
+] [31]
 Underfull \hbox (badness 10000) in paragraph at lines 166--168
 \OT1/cmtt/m/n/10 com / data -[] infrastructure / faiss -[] a -[] library -[] fo
 r -[] efficient -[] similarity -[]
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 625.
- [33]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 625.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 626.
+ [32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 626.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 625.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 625.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 626.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 626.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1DC59C8BBA2884F9D255728055D18CFF;1525.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 625.
+(rerunfilecheck)             Checksum: F63554C6D02E3E01C42611BC741F3D06;1525.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 626.
  ) 
 Here is how much of TeX's memory you used:
- 9513 strings out of 492970
- 149893 string characters out of 3126593
- 260351 words of memory out of 3000000
- 13133 multiletter control sequences out of 15000+200000
+ 9518 strings out of 492970
+ 149995 string characters out of 3126593
+ 264391 words of memory out of 3000000
+ 13136 multiletter control sequences out of 15000+200000
  10932 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,77p,1421b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,77p,1421b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/f
@@ -781,9 +781,9 @@ fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/niels/AppData/Local/Programs
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/nie
 ls/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 
-Output written on main.pdf (35 pages, 2470305 bytes).
+Output written on main.pdf (34 pages, 2470385 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
+ 560 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 500000)
  291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

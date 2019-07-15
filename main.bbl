@@ -61,7 +61,7 @@ J.~Sivic and A.~Zisserman, ``Video google: A text retrieval approach to object
 
 \bibitem{lowe2004distinctive}
 D.~G. Lowe, ``Distinctive image features from scale-invariant keypoints,'' {\em
-  International journal of computer vision}, vol.~60, no.~2, pp.~91--110, 2004.
+  International Journal of Computer Vision}, vol.~60, no.~2, pp.~91--110, 2004.
 
 \bibitem{nister2006scalable}
 D.~Nister and H.~Stewenius, ``Scalable recognition with a vocabulary tree,'' in
@@ -71,12 +71,12 @@ D.~Nister and H.~Stewenius, ``Scalable recognition with a vocabulary tree,'' in
 \bibitem{philbin2007object}
 J.~Philbin, O.~Chum, M.~Isard, J.~Sivic, and A.~Zisserman, ``Object retrieval
   with large vocabularies and fast spatial matching,'' in {\em 2007 IEEE
-  conference on computer vision and pattern recognition}, pp.~1--8, IEEE, 2007.
+  Conference on Computer Vision and Pattern Recognition}, pp.~1--8, IEEE, 2007.
 
 \bibitem{jegou2008hamming}
 H.~Jegou, M.~Douze, and C.~Schmid, ``Hamming embedding and weak geometric
-  consistency for large scale image search,'' in {\em European conference on
-  computer vision}, pp.~304--317, Springer, 2008.
+  consistency for large scale image search,'' in {\em European Conference on
+  Computer Vision}, pp.~304--317, Springer, 2008.
 
 \bibitem{jegou2010aggregating}
 H.~J{\'e}gou, M.~Douze, C.~Schmid, and P.~P{\'e}rez, ``Aggregating local
@@ -92,18 +92,18 @@ H.~Jegou, F.~Perronnin, M.~Douze, J.~S{\'a}nchez, P.~Perez, and C.~Schmid,
 
 \bibitem{krizhevsky2012imagenet}
 A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
-  deep convolutional neural networks,'' in {\em Advances in neural information
-  processing systems}, pp.~1097--1105, 2012.
+  deep convolutional neural networks,'' in {\em Advances in Neural Information
+  Processing Systems}, pp.~1097--1105, 2012.
 
 \bibitem{babenko2014neural}
 A.~Babenko, A.~Slesarev, A.~Chigorin, and V.~Lempitsky, ``Neural codes for
-  image retrieval,'' in {\em European conference on computer vision},
+  image retrieval,'' in {\em European Conference on Computer Vision},
   pp.~584--599, Springer, 2014.
 
 \bibitem{yue2015exploiting}
 J.~Yue-Hei~Ng, F.~Yang, and L.~S. Davis, ``Exploiting local features from deep
-  networks for image retrieval,'' in {\em Proceedings of the IEEE conference on
-  computer vision and pattern recognition workshops}, pp.~53--61, 2015.
+  networks for image retrieval,'' in {\em Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition workshops}, pp.~53--61, 2015.
 
 \bibitem{tolias2015particular}
 G.~Tolias, R.~Sicre, and H.~J{\'e}gou, ``Particular object retrieval with
@@ -138,8 +138,8 @@ K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
 
 \bibitem{beyer1999nearest}
 K.~Beyer, J.~Goldstein, R.~Ramakrishnan, and U.~Shaft, ``When is “nearest
-  neighbor” meaningful?,'' in {\em International conference on database
-  theory}, pp.~217--235, Springer, 1999.
+  neighbor” meaningful?,'' in {\em International Conference on Database
+  Theory}, pp.~217--235, Springer, 1999.
 
 \bibitem{own-github}
 ``Recurring content detector, implementation used for the experiments.''

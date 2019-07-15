@@ -66,13 +66,13 @@ With the subquestions: \\
 	\textit{\textbf{How accurate is each image retrieval approach?\newline}}\\
 	\textit{\textbf{How can the best method be utilized in practice?\newline}}
 \end{adjustwidth}
-This thesis aims to answer aforementioned research questions. Our hypothesis is that such a method may achieve a level of effectiveness that allows practical application at RTL. The rest of this chapter will be used to expand on the different type of video classes which this research is focused on. Chapter \ref{relatedwork} discusses related work. Chapter \ref{section:imageretrieval} elaborates on the used methods for image retrieval. Chapter \ref{methodology} describes the data and methodology and then the produced results are presented in Chapter \ref{results}. Lastly, the results are discussed in Chapter \ref{discussion} and a conclusion is drawn in Chapter \ref{conclusion}.
+This thesis aims to answer aforementioned research questions. Our hypothesis is that such a method may achieve a level of effectiveness that allows practical application at RTL. The rest of this chapter will be used to expand on the different type of video classes which this research is focused on. Chapter \ref{relatedwork} discusses related work. Chapter \ref{section:imageretrieval} elaborates on the used methods for image retrieval. Chapter \ref{methodology} describes the data and methodology and then the produced results are presented and discussed in Chapter \ref{results}. Lastly, a conclusion is drawn in Chapter \ref{conclusion}.
 
 \section{Recurring Content Classes} \label{section:segmentclasses}
 In this section we discuss the different types of content to be detected. What all the content classes have in common is that they (partially) reappear in previous or future episodes or, as is the case with bumpers; that the content reappears within the episode itself. We will use this attribute for the detection.
 
 \subsubsection{Recaps}
-A television show typically has recaps before the opening credits. In the recaps content of previous episodes is repeated to refresh the viewer's memory. This is useful for linear TV when an episode is aired every week. Someone watching episodes back-to-back ideally wants to skip the recaps together with the opening credits because they have seen the content recently. Not all material preceding the opening credits is a recap though, it can be original content. See Figure \ref{fig:contextrecaps} for a visual example.
+A television show typically has recaps before the opening credits. In the recaps, content of previous episodes is repeated to refresh the viewer's memory. This is useful for linear TV when an episode is aired every week. Someone watching episodes back-to-back ideally wants to skip the recaps together with the opening credits because they have seen the content recently. Not all material preceding the opening credits is a recap though, it can be original content. See Figure \ref{fig:contextrecaps} for a visual example.
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_recaps.png}}
@@ -99,7 +99,7 @@ The bumper is a part of the video that eases a viewer into the upcoming commerci
 \end{figure}
 
 \subsubsection{Previews}
-A preview is a segment at the end of an episode playing an advance showing of fragments of the next episode(s) are played. Previews can typically be found in content that was created specially for broadcast TV. It gives the viewer a taste of what to expect in the next episode that will air a week later. These previews may contain overlayed credits of people who helped in the production of the show. See Figure \ref{fig:contextpreviews} for a visual example.
+A preview is a segment at the end of an episode playing an advance showing of fragments of the next episode(s) are played. Previews can typically be found in content that was created specially for broadcast TV. It gives the viewer a taste of what to expect in the next episode that will air later. These previews may contain overlayed credits of people who helped in the production of the show. See Figure \ref{fig:contextpreviews} for a visual example.
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_previews.png}}
@@ -149,7 +149,7 @@ Dimensionality reduction and efficient matching of large amounts of visual data 
 
 \section{Shot Change Detection}
 
-Shot detection is a technique that can be used on videos to determine shot boundaries, see Figure \ref{shotchange} for an example of such a shot change. 
+Shot change detection is a technique that can be used on videos to determine shot boundaries, see Figure \ref{shotchange} for an example of such a shot change. 
 
 \begin{figure}[H]
 	\includegraphics[width=12cm]{images/shotchange.jpg}
@@ -158,11 +158,11 @@ Shot detection is a technique that can be used on videos to determine shot bound
 	\label{shotchange}
 \end{figure}
 
-Shot detection is going to be used and thus will we expand on it. A lot of research has been done related to shot detection \cite{lienhart1998comparison} and many techniques have been proposed. 
+Shot change detection is going to be used to determine the shot boundaries. A lot of research has been done related to shot detection \cite{lienhart1998comparison} and many techniques have been proposed. 
 
 We use a method that looks at the shift in mean color in HSV space \cite{shao2015shot}. The shot boundaries are classified by calculating the difference in hue, saturation and value for each frame and then from this the mean is calculated. If the mean is higher than a threshold H, then a shot boundary is marked, refer to algorithm \ref{algorithm:shotboundary} for a pseudo-code representation.
 
-\begin{algorithm}[H] 
+\begin{algorithm}[h] 
 	\SetAlgoLined
 	shotBoundaries = List()\;
 	previousMeanHSV = getMeanHSV(Episode[0])\;
@@ -214,9 +214,9 @@ In the case of image retrieval the query consists of an image for which the best
 
 \textbf{Text-based image retrieval} refers to retrieval of images based on textual metadata associated with these images. It matches images based on their titles, keywords and more. The downside of this method is that if there is no metadata available then it needs to be added manually. With the growing sizes of image databases this can become quite inefficient, hence the more focus on content-based image retrieval in past years \cite{rajam2013survey}.
 
-\textbf{Content-based image retrieval} is retrieval based on the content of the image rather than the metadata as is the case with concept-based image retrieval. Computer vision is used to evaluate the image similarity, this can be done by looking at colors, shapes, textures and more. The advantage of content based image retrieval is that it does not rely on the metadata of images and thus does not require manual labeling.
+\textbf{Content-based image retrieval} is retrieval based on the content of the image rather than the metadata as is the case with text-based image retrieval. Computer vision is used to evaluate the image similarity, this can be done by looking at colors, shapes, textures and more. The advantage of content based image retrieval is that it does not rely on the metadata of images and thus does not require manual labeling.
 
-\section{Feature vectors}
+\section{Feature Vectors}
 A feature vector is a vector containing a numeric representation of multiple characteristics of an object. In this case the objects are images, the frames of a video. To illustrate feature vectors for images, a small example is given. Consider the following three images of 10 by 10 pixels consisting only of black or white pixels in Figure \ref{featurevectorimages}.
 
 If we would like to measure the image similarity between these pictures then we could do this on a pixel-per-pixel basis, while this could work for low dimensional images, comparing HD images consisting of 1920 pixels by 1080 pixels would require massive computation and will require extensive logic to handle small deviations between images. This can be resolved by creating feature vectors to represent the images. A representation for these example images could be the number of black and white pixels in the image, resulting in the feature vector; $\textbf{x} = [\#\;white\;pixels, \#\;black\;pixels]^T$. This vector can now be represented in 2D-space, and compared to other vectors in 2D space by calculating the distance between other points in that space. The distance could for example be computed by calculating the euclidean distance between each vector.
@@ -279,7 +279,7 @@ Color texture moments as proposed by Yu et al. \cite{yu2002colortexturemoments} 
 Which results in 8 channels for each color map, 24 channels in total. For each of the resulting channels the first and second color moments, which are the mean and standard deviation, are taken. This results in a 48-dimensional feature vector.
 
 \section{CNN Features} \label{subsection:cnnfeatures}
-Convolutional neural networks (CNN) are a special type of neural networks that are good at handling image tasks. The 2012 paper by Krizhevsky et al. \cite{krizhevsky2012imagenet} accelerated the field of computer vision. CNNs are very good at image classification and segmentation tasks. This is because they take advantage of the fact that pixels close to each other are more likely to be related than pixels far apart. A classical neural network would link each pixel to all of the other pixels; this increases computational overhead and reduces accuracy. See Figure \ref{fig:convnet} for a small example of a CNN. The image is convolved with a 3x3 pixel filter which results in a new feature map, then max pooling can be applied to these feature maps that downsamples the maps by only keeping high activations. After repeating these steps a few times, the output can be fed through fully connected layers to for example learn a classification task. This was a brief summary of the workings of a CNN. CNNs are not only good in image classification and segmentation; it was found that using the resulting channels after the convolution layers as feature vectors also perform well at image retrieval tasks. There are many ways to construct CNN feature vectors that perform well as described in \cite{zheng2018sift}.
+Convolutional neural networks (CNN) are a special type of neural networks that are good at handling image tasks. The 2012 paper by Krizhevsky et al. \cite{krizhevsky2012imagenet} that introduces the convolutional neural network gave rise to a lot of research in this area since then. CNNs are very good at image classification and segmentation tasks. This is because they take advantage of the fact that pixels close to each other are more likely to be related than pixels far apart. A classical neural network would link each pixel to all of the other pixels; this increases computational overhead and reduces accuracy. See Figure \ref{fig:convnet} for a small example of a CNN. The image is convolved with a 3x3 pixel filter which results in a new feature map, then max pooling can be applied to these feature maps that downsamples the maps by only keeping high activations. After repeating these steps a few times, the output can be fed through fully connected layers to for example learn a classification task. CNNs are not only good in image classification and segmentation; it was found that using the resulting channels after the convolution layers as feature vectors also perform well at image retrieval tasks. There are many ways to construct CNN feature vectors that perform well as described in \cite{zheng2018sift}.
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{images/convnet.png}
@@ -288,14 +288,14 @@ Convolutional neural networks (CNN) are a special type of neural networks that a
 	\label{fig:convnet}
 \end{figure}
 
-We will use the Regional Maximum Activation of Convolutions (R-MAC) method introduced by Tolias et al. \cite{tolias2015particular} as our implementation for the feature vectors. The frames are fed through a pre-trained VGG16 neural network \cite{simonyan2014very}, which is a CNN trained for the Imagenet challenge; an image classification problem. A network trained for image classification captures much of the image context with its filters. The last fully connected layers of the network are used for the classification task and are thus discarded, the resulting channels with activations from the convolutional layers are divided up into regions. For each of these regions the Maximum Activations of Convolutions (MAC) feature vector is calculated, and all these feature vectors are then post-processed by applying L2-normalization, 
+We will use the Regional Maximum Activation of Convolutions (R-MAC) method introduced by Tolias et al. \cite{tolias2015particular} as our implementation for the feature vectors. The frames are fed through a pre-trained VGG16 neural network \cite{simonyan2014very}, which is a CNN trained for the Imagenet challenge; an image classification problem. A network trained for image classification captures much of the image context with its filters. The last fully connected layers of the network are used for the classification task and are thus discarded, the resulting channels with activations from the convolutional layers are divided up into regions. For each of these regions the Maximum Activations of Convolutions (MAC) feature vector is calculated, and all these feature vectors are then post-processed by applying L2-normalization, PCA-whitening and L2-normalization. 
 
-PCA-whitening and L2-normalization. PCA is a technique that can be used to reduce the dimensionality of vectors while roughly keeping the same information it encapsulates. PCA-whitening is a closely related step that removes the correlation between features and makes the vector have unit variance. 
+PCA is a technique that can be used to reduce the dimensionality of vectors while roughly keeping the same information it encapsulates. PCA-whitening is a closely related step that removes the correlation between features and makes the vector have unit variance. 
 
 After these steps, all the feature vectors are summed into one resulting feature vector and L2-normalization is applied one last time as the final step, resulting in a 512-dimensional vector.
 
 \chapter{Methodology} \label{methodology}
-We want to explore whether we can detect recurring content unsupervised and if so, which method of feature vector construction scores the best in terms of precision and recall. Initially a non-generalized approach was tried, where a unique method for each content class was used (For example: OCR for textual closing credits, similarity matrices for opening credits and feature based classification for recaps and previews). However, this was quickly found to be ineffective because of a high variety of edge cases in creative non-structured video content. 
+We want to explore whether we can detect recurring content unsupervised and if so, which method of feature vector construction scores the best in terms of precision and recall. Initially a non-generalized approach was tried, where a unique method for each content class was used (For example: OCR for textual closing credits, similarity matrices for opening credits and feature based classification for recaps and previews). However, this was swiftly found to be ineffective because of a high variety of edge cases in creative non-structured video content. 
 
 The characteristic of all the segment classes is that they reoccur either in previous or future episodes. To match frames from one episode with other episodes, feature vectors were constructed from the frames and the distances between these vectors were computed and saved. If a part of the video consecutively has matching feature vectors from previous or future episodes, then that part is labeled as a recurring segment. It is therefore important that the resulting feature vectors do not mismatch between actual recurring content and content that looks alike. Methods chosen for construction of the feature vectors should therefore not result in feature vectors of very high dimensionality, because this has proven to reduce the distance between the farthest and closest points \cite{beyer1999nearest}, likely diminishing the distinctive property of the feature vectors that is needed.
 
@@ -354,14 +354,14 @@ Each filter A with dimensions M x M from Figure \ref{fig:filters} is convolved w
 This results in 3 * 8 = 24 channels, of which the mean $\mu$ and standard deviation $\sigma$ are and concatenated into a single vector \textbf{v}, meaning that $|\textbf{v}| = 48$. This method will be called CTM in the results chapter. 
 
 \subsection{CNN Features}
-For the computation of the CNN feature vectors we use a re-implementation written in Python from Github \cite{rmac-github}. This re-implementation was used opposed to the original implementation by the authors, because it was written in Python and could thus be integrated well into our experimental framework. This re-implementation could only handle frames sized 224x224 however. So for this step the frames were further resized from 320xHEIGHT to 224x244. These frames were then fed through an Imagenet pre-trained VGG16 neural network and on the channels before the fully connected layers the steps described in section \ref{subsection:cnnfeatures} are applied. Resulting in the single vector \textbf{v} where $|\textbf{v}| = 512$.
+For the computation of the CNN feature vectors we use a re-implementation written in Python from Github \cite{rmac-github}. This re-implementation was used opposed to the original implementation by the authors, because it was written in Python and could thus be integrated well into our experimental framework. This re-implementation could only handle frames sized 224x224 however. So for this step the frames were further resized from 320xHEIGHT to 224x244. These frames were then fed through a VGG16 neural network pre-trained on Imagenet and on the channels before the fully connected layers the steps described in section \ref{subsection:cnnfeatures} are applied. Resulting in the single vector \textbf{v} where $|\textbf{v}| = 512$.
 
 This method will be called CNN in the results chapter.
 
 
 \section{Matching and Detection}
 
-All the resulting lists of feature vectors will be added to the index of an empty Faiss instance. Faiss is a library for efficient similarity search of dense vectors \cite{faiss, faiss-github} and thus perfectly suited for our task. This library efficiently handles building the inverted index and nearest neighbor matching. The library supports many different implementations of several techniques. We use their "Exact search for L2" implementation. Which does an exact brute force search given a set of vectors $x_i$ in dimension $d$ as the documents, when given a new vector $x$ in dimension d as the query, it efficiently performs the operation:
+All the resulting lists of feature vectors will be added to the index of an empty Faiss instance. Faiss is a library for efficient similarity search of dense vectors \cite{faiss, faiss-github} and thus perfectly suited for our task. This library efficiently handles building the inverted index and nearest neighbor matching. The library supports implementations of several techniques. We use their "Exact search for L2" implementation. Which does an exact brute force search given a set of vectors $x_i$ in dimension $d$ as the documents, when given a new vector $x$ in dimension d as the query, it efficiently performs the operation:
 
 \[i = argmin_i||x - x_i||\]
 
@@ -371,14 +371,14 @@ All the resulting lists of feature vectors will be added to the index of an empt
 \begin{figure}[H]
 	\includegraphics[width=\textwidth, center, scale=0.75]{images/thesisdiagram.png}
 	\centering
-	\caption{\textbf{Diagram of the described methodology. The recurring content detection process for episode 2 is portrayed.}}
+	\caption{Diagram of the described methodology. The recurring content detection process for episode 2 is portrayed.}
 	\label{fig:diagram}
 \end{figure}
 
 \subsection{Recurring Content}
-To mark a part of the video as recurring content, we do the following steps: The frames of interest are converted to feature vectors while retaining the sequential order of episodes. Then the episode is used as an image query against all other episodes, resulting in a vector with distances for the best matches. We mark the locations of the indexes where these distances are lower than the percentile $p \in \{5\%, 7.5\%, 10\%\}$ of the lowest-distances vector. These are our initial detections. Because these detections can still contain noise, we do the following post-processing steps: Detections are merged into one if they are less than 10 seconds apart; and, we only keep the two largest detections within the first 20\% of the video or we keep the detection if it ends in the last 15 seconds of the video. The rationale behind this is that the recurring content that we want to detect is either in the first or last part of the video. See Figure \ref{fig:diagram} for a visual depiction of the described methodology.
+To mark a part of the video as recurring content, we do the following steps: The frames of interest are converted to feature vectors while retaining the sequential order of episodes. Then the episode is used as an image query against all other episodes, resulting in a vector with distances for the best matches. We mark the locations of the indexes where these distances are lower than the percentile $p \in \{5\%, 7.5\%, 10\%\}$ of the lowest-distances vector. These are our initial detections. Because these detections can still contain noise, we do the following post-processing steps: Detections are merged into one if they are less than 10 seconds apart; and, we only keep the two largest detections within the first 20\% of the video or we keep the detection if it ends in the last 15 seconds of the video. The rationale behind this is that the recurring content that we want to detect is either in the first or last part of the video. See Figure \ref{fig:diagram} for a visual depiction of the described methodology and refer to Algorithm \ref{algorithm:recurring} for a pseudo-code implementation.
 
-\begin{algorithm}[H] 
+\begin{algorithm}[h] 
 	\SetAlgoLined
 	
 	import faiss
@@ -386,16 +386,17 @@ To mark a part of the video as recurring content, we do the following steps: The
 	percentile = 5 //or 7.5 or 10
 	\texttt{\\}
 	\texttt{\\}
-	//Code for determining recurring content in episode with index i
+	//Code for determining recurring content in episode with index i \\
 	season = T\;
 	episode = season.get(i)\;
-	season.remove(i)\;
+	season.remove(episode)\;
 	episodeVectors = convertToVectors(episode)\;
 	seasonVectors = convertToVectors(season)\;
 	\texttt{\\}
 	index = faiss.buildIndex(seasonVectors)\;
 	distances = index.search(episodeVectors)\;
 	\texttt{\\}
+	//Gets the value where x\% of the values will be lower than that value \\
 	threshold = getPercentileDistance(distances, percentile)\;
 	\texttt{\\}
 	recurringIndexes = new List()\;
@@ -428,7 +429,7 @@ To mark a part of the video as recurring content, we do the following steps: The
 	\textbf{return} getTwoLongestIntervals(detectionsAtStart) + detectionsAtEnd
 
 	\caption{\textbf{Recurring content detection}}
-	\label{algorithm:shotboundary}
+	\label{algorithm:recurring}
 \end{algorithm}
 
 \subsection{Bumpers}
@@ -436,9 +437,9 @@ The methodology for detecting the bumpers within video content is different, bec
 
 For the detection of bumpers we take a sliding window of 20 seconds of video frames, this will be the query. The index will consist of the remaining frames in the video, for every frame of interest the resulting distances of the two nearest neighbors will be saved and then this process is repeated for the next 20 seconds in the video all the way to the end.
 
-After all the closest in-episode nearest neighbors are computed for each frame then from these results bumpers can be detected. We found that a global threshold for determining matches does not work well, probably because of the fact that bumpers are very short. Therefore we will use the ratio test described by Lowe \cite{lowe2004distinctive} for deciding on whether there is a match. With the ratio test the distance between the closest neighbor and second-closest neighbor is taken into account. The ratio of the distance of the closest neighbor to the distance of the second-closest neighbor determines whether there is a correct match, if the ratio is low then there is a higher chance for the match to be correct. In \cite{lowe2004distinctive} they classify a match to be correct if the ratio of the distances is equal to 0.8 or lower, we experimented with a ratio $r \in \{0.5, 0.6, 0.7, 0.8\}$ to find the optimal ratio for this problem.
+After all the closest in-episode nearest neighbors are computed for each frame then from these results bumpers can be detected. We found that a global threshold for determining matches does not work well, probably because of the fact that bumpers are very short. Therefore we will use the ratio test described by Lowe \cite{lowe2004distinctive} for deciding on whether there is a match. With the ratio test the distance between the closest neighbor and second-closest neighbor is taken into account. The ratio of the distance of the closest neighbor to the distance of the second-closest neighbor determines whether there is a correct match, if the ratio is low then there is a higher chance for the match to be correct. In \cite{lowe2004distinctive} they classify a match to be correct if the ratio of the distances is equal to 0.8 or lower, we experimented with a ratio $r \in \{0.5, 0.6, 0.7, 0.8\}$ to find the optimal ratio for this problem. Refer to Algorithm \ref{algorithm:bumpers} for a pseudo-code implementation.
 
-\begin{algorithm}[H] 
+\begin{algorithm}[h] 
 	\SetAlgoLined
 	
 	import faiss\;
@@ -451,9 +452,9 @@ After all the closest in-episode nearest neighbors are computed for each frame t
 	episodeVectors = convertToVectors(episode)\;
 	\texttt{\\}
 		
-	//To get a stepsize of 10 seconds of video we need to jump (10*25)/3 indexes \\
+	//To get a stepsize of 20 seconds of video we need to jump (20*25)/3 indexes \\
 	//because frames are subsampled every 3 frames \\
-	stepSize = (10 * 25) / 3 \;
+	stepSize = (20 * 25) / 3 \;
 	currentStep = 0\;
 	inEpisodeDistances = new List()\;
 	\While{currentStep $<$ episodeVectors.size()}
@@ -484,7 +485,7 @@ After all the closest in-episode nearest neighbors are computed for each frame t
 	\textbf{return} getConsecutiveRatioIndexes(ratioIndexes, 2.5)\;
 	
 	\caption{\textbf{Bumper detection}}
-	\label{algorithm:shotboundary}
+	\label{algorithm:bumpers}
 \end{algorithm}
 
 \chapter{Results} \label{results}
@@ -501,7 +502,7 @@ The results were evaluated as a retrieval problem. By doing so, the measures pre
 
 \[\mathrm{recall} = \frac{\mathrm{detected\;relevant\;seconds}}{\mathrm{total\;relevant\;seconds}}\]
 
-Because it is possible for the manual annotation to also be slightly inaccurate, we mark detections that are within a 2 second margin of the relevant section, to also be relevant. Figure \ref{fig:evaluation-example} depicts how the aforementioned precision and recall formulas apply to the detections and ground truth of a single episode. For the calculation of the total results on all episodes, the true positives, false positives and false negatives of all episodes are summed together and then precision and recall are calculated over the whole data set. The results are shown in Table \ref{table:resultsrecurring}. Plus the Precision-Recall curves for each recurring content class separately, in Figure \ref{fig:precision-recall}.
+Because it is possible for the manual annotation to also be slightly inaccurate, we mark detections that are within a 2 second margin of the relevant section, to also be relevant. Figure \ref{fig:evaluation-example} depicts how the aforementioned precision and recall formulas apply to the detections and ground truth of a single episode. For the calculation of the total results on all episodes, the true positives, false positives and false negatives of all episodes are summed together and then precision and recall are calculated over the whole data set. The results are shown in Table \ref{table:resultsrecurring} plus the Precision-Recall curves for each recurring content class separately, in Figure \ref{fig:precision-recall}.
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{images/evaluation.png}
@@ -531,14 +532,14 @@ Because it is possible for the manual annotation to also be slightly inaccurate,
 			\hline
 		\end{tabular}
 	\end{center}
-	\caption{Results of the recurrent content detection at varying values for the percentile threshold. If a distance is belowz the threshold, it is classified as recurring content.}
+	\caption{Results of the recurring content detection at varying values for the percentile threshold. If a distance is below the threshold, it is classified as recurring content.}
 	\label{table:resultsrecurring}
 \end{table}
 
 \begin{figure}[h]
 	\makebox[\textwidth][c]{\includegraphics[scale=0.6]{images/precision-recall.png}}
 	\centering
-	\caption{Precision-Recall curves for each recurrent content class for the percentile values in the range [2.5, 20]. Data points that are in the upper right indicate good performance.}
+	\caption{Precision-Recall curves for each recurring content class for the percentile values in the range [2.5, 20]. Data points that are in the upper right indicate good performance.}
 	\label{fig:precision-recall}
 \end{figure}
 
@@ -578,7 +579,7 @@ Figure \ref{fig:evaluation-example-bumpers} depicts how the precision and recall
 
 \section{Discussion} \label{discussion}
 %interpretations
-The results show that the performance of the different methods for recurrent segment detection, varying the feature vector construction approach, do not differ much. The way the feature vectors are constructed does not show large differences when looking at the overall results. However, when looking at the scores for each class separately in Figure \ref{fig:precision-recall}, it can be noticed that the CNN-method performs better on the recaps and previews retrieval tasks. Possible explanations for this could be that the CNN-method is a local descriptor as opposed to a global one, therefore being able to handle the more tough cases of recaps and previews. Another explanation could be that higher dimensionality vectors are more suited, because the CNN vectors had the highest dimensionality.
+The results show that the performance of the different methods for recurring content detection, varying the feature vector construction approach, do not differ much. The way the feature vectors are constructed does not show large differences when looking at the overall results. However, when looking at the scores for each class separately in Figure \ref{fig:precision-recall}, it can be noticed that the CNN-method performs better on the recaps and previews retrieval tasks. Possible explanations for this could be that the CNN-method is a local descriptor as opposed to a global one, therefore being able to handle the more tough cases of recaps and previews. Another explanation could be that higher dimensionality vectors are more suited, because the CNN vectors had the highest dimensionality.
 
 Table \ref{table:resultsrecurring} presents that using shotboundaries results in lower recall scores compared to the uniform sampling of taking a frame every 3 frames. A possible explanation is that the shotboundary frames sometimes mismatch because the content shown does not consist of full shots.
 
@@ -609,7 +610,7 @@ Future work: \\
 
 
 \chapter{Conclusion and Future Work} \label{conclusion}
-In this thesis we explored how well an image retrieval based approach could detect recurring content in a TV-show in an unsupervised manner. Experiments were performed using three different kind of feature vectors. Based upon these experiments we conclude that an image retrieval based approach definitely has potential for the unsupervised detection of recurrent content in TV-Shows. The experiments showed that the three different methods all get reasonable results. Overall, it is found that the CNN-based method using uniform frame sampling has the most potential. Using this method for a metadata labeling task will still require manual human supervision. Future research is needed to improve upon the methodology or to experiment with other implementations of CNN-based feature vectors. This thesis presented novel research for the unexplored research area of recurring content detection that is focused on VOD content.
+In this thesis we explored how well an image retrieval based approach could detect recurring content in a TV-show in an unsupervised manner. Experiments were performed using three different kind of feature vectors. Based upon these experiments we conclude that an image retrieval based approach definitely has potential for the unsupervised detection of recurring content in TV-Shows. The experiments showed that the three different methods all get reasonable results. Overall, it is found that the CNN-based method using uniform frame sampling has the most potential. Using this method for a metadata labeling task will still require manual human supervision. Future research is needed to improve upon the methodology or to experiment with other implementations of CNN-based feature vectors. This thesis presented novel research for the unexplored research area of recurring content detection that is focused on VOD content.
 
 %recommendations: future studies
 Future studies could be performed on a larger dataset consisting of full seasons of several shows to further prove the validity of this method and these future studies could try variations of the methodology and different ways of constructing the CNN feature vectors. Also the experiment could be repeated with data where the recurring content classes are more in balance to verify the results.

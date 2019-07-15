@@ -1,5 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
+Repeated entry---line 434 of file references.bib
+ : @inproceedings{krizhevsky2012imagenet
+ :                                      ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in lienhart1997detection
-(There was 1 warning)
+(There was 1 error message)

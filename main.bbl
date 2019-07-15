@@ -129,6 +129,13 @@ H.~Yu, M.~Li, H.-J. Zhang, and J.~Feng, ``Color texture moments for
   content-based image retrieval,'' in {\em Proceedings. International
   Conference on Image Processing}, vol.~3, pp.~929--932, IEEE, 2002.
 
+\bibitem{convnet-fig}
+``{Deep Learning for Java}.'' \url{https://deeplearning4j.org/}.
+
+\bibitem{simonyan2014very}
+K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
+  large-scale image recognition,'' {\em arXiv preprint arXiv:1409.1556}, 2014.
+
 \bibitem{beyer1999nearest}
 K.~Beyer, J.~Goldstein, R.~Ramakrishnan, and U.~Shaft, ``When is “nearest
   neighbor” meaningful?,'' in {\em International conference on database
@@ -156,7 +163,7 @@ J.~Johnson, M.~Douze, and H.~J{\'e}gou, ``Billion-scale similarity search with
   \url{https://github.com/facebookresearch/faiss}.
 
 \bibitem{faiss-blog}
-``Blog: Faiss, a library for efficient similarity searc.''
+``{Blog: Faiss, A library for efficient similarity search}.''
   \url{https://code.fb.com/data-infrastructure/faiss-a-library-for-efficient-similarity-search/}.
 
 \end{thebibliography}

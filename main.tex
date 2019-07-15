@@ -6,7 +6,7 @@
 \usepackage{subcaption}
 \usepackage{changepage}
 \usepackage[ruled,vlined]{algorithm2e}
-\usepackage{url}
+\usepackage[hyphens]{url}
 
 \usepackage{geometry}
 \geometry{margin=1.7in}
@@ -33,7 +33,7 @@
 \begin{document}
 
 \title{Leveraging Image Retrieval for Unsupervised Detection of Recurring Content in TV Shows\'{} Video Files}
-\author{Master\'{}s Thesis\\ \\ Niels ten Boom \\ [1cm]{\small \textbf{Supervisor:} Prof. dr. ir. A.P. de Vries} \\ {\small \textbf{Second reader:} Prof. M.A. Larson \,\,\,\,\,\,\,\,} \\ {\small \textbf{\,External supervisor (RTL):} D. Odijk}}
+\author{Master\'{}s Thesis\\ \\ Niels ten Boom \\ [1cm]{\small \textbf{Supervisor:} Prof. dr. ir. A.P. de Vries} \\ {\small \textbf{Second reader:} Prof. M.A. Larson \,\,\,\,\,\,\,\,} \\ {\small \textbf{\,External supervisor:} D. Odijk} \\ \\ \small{\textit{Special thanks to RTL for enabling me to write this thesis with them.}}}
 
 \date{\vspace{-3ex}}
 
@@ -76,7 +76,7 @@ A television show typically has recaps before the opening credits. In the recaps
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_recaps.png}}
-	\caption{\textbf{Visual depiction of recaps. Shots from episode 1 and 2 are shown at the start of episode 3 to give a brief summary of important events.}}
+	\caption{Visual depiction of recaps. Shots from episode 1 and 2 are shown at the start of episode 3 to give a brief summary of important events.}
 	\label{fig:contextrecaps}
 \end{figure}
 
@@ -85,7 +85,7 @@ The opening credits of a TV-show are generally the same for all of the episodes 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_openingcredits.png}}
-	\caption{\textbf{Visual depiction of opening credits. A very similar sequence of shots that start at different times at the beginning of an episode.}}
+	\caption{Visual depiction of opening credits. A very similar sequence of shots that starts at different times at the beginning of an episode.}
 	\label{fig:contextopeningcredits}
 \end{figure}
 
@@ -94,7 +94,7 @@ The bumper is a part of the video that eases a viewer into the upcoming commerci
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_bumpers.png}}
-	\caption{\textbf{Visual depiction of bumpers. A summary of important shots are shown together that will occur at a later point of time in the episode.}}
+	\caption{Visual depiction of bumpers. A summary of important shots are shown together that will occur at a later point of time in the episode.}
 	\label{fig:contextbumpers}
 \end{figure}
 
@@ -103,7 +103,7 @@ A preview is a segment at the end of an episode playing an advance showing of fr
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_previews.png}}
-	\caption{\textbf{Visual depiction of previews. It shows shots that will occur in the next episode with a textual overlay.}}
+	\caption{Visual depiction of previews. It shows shots that will occur in the next episode with a textual overlay.}
 	\label{fig:contextpreviews}
 \end{figure}
 
@@ -112,7 +112,7 @@ The closing credits at the end of a video mostly consist of scrolling text and t
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_closingcredits.png}}
-	\caption{\textbf{Visual depiction of closing credits. Frames consisting of text at the end of each episode in which the actors, producers and others related to the show are given credit.}}
+	\caption{Visual depiction of closing credits. Frames consisting of text at the end of each episode in which the actors, producers and others related to the show are given credit.}
 	\label{fig:contextclosingcredits}
 \end{figure}
 
@@ -208,7 +208,7 @@ In the case of image retrieval the query consists of an image for which the best
 \begin{figure}[H]
 	\includegraphics[width=8cm]{images/imageretrieval.png}
 	\centering
-	\caption{\textbf{Visual example of image retrieval.}}
+	\caption{Visual example of image retrieval.}
 	\label{fig:imageretrieval}
 \end{figure}
 
@@ -261,7 +261,7 @@ A color histogram is a representation of the distribution of colors in an image.
 \begin{figure}[H]
 	\includegraphics[width=8cm]{images/colorhistogram.png}
 	\centering
-	\caption{\textbf{Color histogram with a large binsize (binsize=128) for illustration.}}
+	\caption{Color histogram with a large binsize (binsize=128) for illustration.}
 	\label{fig:colorhistogram}
 \end{figure}
 Color histograms are global descriptors because they describe the image on a global level. Viewing a frame as a color histogram loses a lot of detail, but for the specific problem recurring video content, this may be sufficient.
@@ -272,16 +272,27 @@ Color texture moments as proposed by Yu et al. \cite{yu2002colortexturemoments} 
 \begin{figure}[H]
 	\includegraphics[width=5cm]{images/filters.png}
 	\centering
-	\caption{\textbf{Filters used for computing the color texture channels.}}
+	\caption{Filters used for computing the color texture channels.}
 	\label{fig:filters}
 \end{figure}
 
 Which results in 8 channels for each color map, 24 channels in total. For each of the resulting channels the first and second color moments, which are the mean and standard deviation, are taken. This results in a 48-dimensional feature vector.
 
 \section{CNN Features} \label{subsection:cnnfeatures}
-Convolutional neural networks are very good at image classification and segmentation tasks. However it was found that using the resulting channels after the convolution layers as feature vectors also performs well at image retrieval tasks. There are many ways to construct CNN feature vectors that perform well as described in \cite{zheng2018sift}.
+Convolutional neural networks (CNN) are a special type of neural networks that are good at handling image tasks. The 2012 paper by Krizhevsky et al. \cite{krizhevsky2012imagenet} accelerated the field of computer vision. CNNs are very good at image classification and segmentation tasks. This is because they take advantage of the fact that pixels close to each other are more likely to be related than pixels far apart. A classical neural network would link each pixel to all of the other pixels; this increases computational overhead and reduces accuracy. See Figure \ref{fig:convnet} for a small example of a CNN. The image is convolved with a 3x3 pixel filter which results in a new feature map, then max pooling can be applied to these feature maps that downsamples the maps by only keeping high activations. After repeating these steps a few times, the output can be fed through fully connected layers to for example learn a classification task. This was a brief summary of the workings of a CNN. CNNs are not only good in image classification and segmentation; it was found that using the resulting channels after the convolution layers as feature vectors also perform well at image retrieval tasks. There are many ways to construct CNN feature vectors that perform well as described in \cite{zheng2018sift}.
 
-We will use the Regional Maximum Activation of Convolutions (R-MAC) method introduced by Tolias et al. \cite{tolias2015particular} as our implementation for the feature vectors. The frames are fed through a pre-trained VGG16 neural network. The last fully connected layers of the network are discarded, and the resulting channels with activations from the convolutional layers are divided up into regions. For each of these regions the Maximum Activations of Convolutions (MAC) feature vector is calculated, and all these feature vectors are then post-processed by applying L2-normalization, PCA-whitening and L2-normalization. Then all the feature vectors are summed into one resulting feature vector and L2-normalization is applied one last time as the final step, resulting in a 512-dimensional vector. For a more extensive description, one can refer to \cite{tolias2015particular}.
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{images/convnet.png}
+	\centering
+	\caption{The working process of a neural network. Image from \cite{convnet-fig}.}
+	\label{fig:convnet}
+\end{figure}
+
+We will use the Regional Maximum Activation of Convolutions (R-MAC) method introduced by Tolias et al. \cite{tolias2015particular} as our implementation for the feature vectors. The frames are fed through a pre-trained VGG16 neural network \cite{simonyan2014very}, which is a CNN trained for the Imagenet challenge; an image classification problem. A network trained for image classification captures much of the image context with its filters. The last fully connected layers of the network are used for the classification task and are thus discarded, the resulting channels with activations from the convolutional layers are divided up into regions. For each of these regions the Maximum Activations of Convolutions (MAC) feature vector is calculated, and all these feature vectors are then post-processed by applying L2-normalization, 
+
+PCA-whitening and L2-normalization. PCA is a technique that can be used to reduce the dimensionality of vectors while roughly keeping the same information it encapsulates. PCA-whitening is a closely related step that removes the correlation between features and makes the vector have unit variance. 
+
+After these steps, all the feature vectors are summed into one resulting feature vector and L2-normalization is applied one last time as the final step, resulting in a 512-dimensional vector.
 
 \chapter{Methodology} \label{methodology}
 We want to explore whether we can detect recurring content unsupervised and if so, which method of feature vector construction scores the best in terms of precision and recall. Initially a non-generalized approach was tried, where a unique method for each content class was used (For example: OCR for textual closing credits, similarity matrices for opening credits and feature based classification for recaps and previews). However, this was quickly found to be ineffective because of a high variety of edge cases in creative non-structured video content. 
@@ -470,7 +481,7 @@ After all the closest in-episode nearest neighbors are computed for each frame t
 	
 	//Return the consecutive ratio indexes  \\
 	//that together are longer than 2.5 seconds \\
-	return getConsecutiveRatioIndexes(ratioIndexes, 2.5)\;
+	\textbf{return} getConsecutiveRatioIndexes(ratioIndexes, 2.5)\;
 	
 	\caption{\textbf{Bumper detection}}
 	\label{algorithm:shotboundary}
@@ -480,13 +491,17 @@ After all the closest in-episode nearest neighbors are computed for each frame t
 This chapter contains the results for the experiments of detecting the recurring content (recaps, opening/closing credits and previews) and the experiments of the bumper detection.
 
 \section{Recurring Content}
-The results were evaluated as a retrieval problem. By doing so, the measures precision and recall could be used to describe the quality of recurring content detection for the methods proposed. Each second of recurring content is marked as a relevant instance and if recurring content gets detected, then those are relevant detected seconds, under this model we can calculate precision and recall as following:
+The results were evaluated as a retrieval problem. By doing so, the measures precision and recall could be used to describe the quality of recurring content detection for the methods proposed. The methods return time ranges in the form of [t, t']. The annotations are also in this format. The true positive part is the intersection between the detected time intervals and the annotation time intervals. The false positive parts are parts from the detections that have no overlap with the annotations and false negative parts are parts from the annotations that have no intersection with the detections. To simplify the explanation of the evaluation process; it is framed as a retrieval problem. Each second of recurring content time intervals is marked as a relevant instance and if recurring content gets detected, which are true positives, then those are relevant detected seconds, under this model we can calculate precision and recall as following:
+
+\[\mathrm{detected\;relevant\;seconds} = \mathrm{true\;positives}\]
+\[\mathrm{total\;detected\;seconds = \mathrm{true\;positives} + \mathrm{false\;positives}}\]
+\[\mathrm{total\;relevant\;seconds} = \mathrm{true\;positives} + \mathrm{false\;negatives}\]
 
 \[\mathrm{precision} = \frac{\mathrm{detected\;relevant\;seconds}}{\mathrm{total\;detected\;seconds}}\]
 
 \[\mathrm{recall} = \frac{\mathrm{detected\;relevant\;seconds}}{\mathrm{total\;relevant\;seconds}}\]
 
-Because it is possible for the manual annotation to also be slightly inaccurate, we mark detections that are within a 2 second margin of the relevant section, to also be relevant. Figure \ref{fig:evaluation-example} depicts how the aforementioned precision and recall formulas apply to the detections and ground truth of a single episode. For the calculation of the total results on all episodes, the 'seconds' variables of all episodes are summed together and then precision and recall are calculated. The results are shown in Table \ref{table:resultsrecurring}. Plus the Precision-Recall curves for each recurring content class separately, in Figure \ref{fig:precision-recall}.
+Because it is possible for the manual annotation to also be slightly inaccurate, we mark detections that are within a 2 second margin of the relevant section, to also be relevant. Figure \ref{fig:evaluation-example} depicts how the aforementioned precision and recall formulas apply to the detections and ground truth of a single episode. For the calculation of the total results on all episodes, the true positives, false positives and false negatives of all episodes are summed together and then precision and recall are calculated over the whole data set. The results are shown in Table \ref{table:resultsrecurring}. Plus the Precision-Recall curves for each recurring content class separately, in Figure \ref{fig:precision-recall}.
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{images/evaluation.png}
@@ -516,7 +531,7 @@ Because it is possible for the manual annotation to also be slightly inaccurate,
 			\hline
 		\end{tabular}
 	\end{center}
-	\caption{Results of the recurrent content detection at varying values for the lowest percentiles of distances.}
+	\caption{Results of the recurrent content detection at varying values for the percentile threshold. If a distance is belowz the threshold, it is classified as recurring content.}
 	\label{table:resultsrecurring}
 \end{table}
 
@@ -563,7 +578,7 @@ Figure \ref{fig:evaluation-example-bumpers} depicts how the precision and recall
 
 \section{Discussion} \label{discussion}
 %interpretations
-The results show that the performance of the different methods for recurrent segment detection, varying the feature vector construction approach, do not differ much. The way the feature vectors are constructed does not improve the results significantly when looking at the overall results. However, when looking at the scores for each class separately in Figure \ref{fig:precision-recall}, it can be noticed that the CNN-method performs better on the recaps and previews retrieval tasks. Possible explanations for this could be that the CNN-method is a local descriptor as opposed to a global one, therefore being able to handle the more tough cases of recaps and previews. Another explanation could be that higher dimensionality vectors are more suited, because the CNN vectors had the highest dimensionality.
+The results show that the performance of the different methods for recurrent segment detection, varying the feature vector construction approach, do not differ much. The way the feature vectors are constructed does not show large differences when looking at the overall results. However, when looking at the scores for each class separately in Figure \ref{fig:precision-recall}, it can be noticed that the CNN-method performs better on the recaps and previews retrieval tasks. Possible explanations for this could be that the CNN-method is a local descriptor as opposed to a global one, therefore being able to handle the more tough cases of recaps and previews. Another explanation could be that higher dimensionality vectors are more suited, because the CNN vectors had the highest dimensionality.
 
 Table \ref{table:resultsrecurring} presents that using shotboundaries results in lower recall scores compared to the uniform sampling of taking a frame every 3 frames. A possible explanation is that the shotboundary frames sometimes mismatch because the content shown does not consist of full shots.
 
@@ -594,10 +609,10 @@ Future work: \\
 
 
 \chapter{Conclusion and Future Work} \label{conclusion}
-In this thesis we explored how well an image retrieval based approach could detect recurring content in a TV-show in an unsupervised manner. Experiments were performed using three different kind of feature vectors. Based upon these experiments we conclude that an image retrieval based approach definitely has potential for the unsupervised detection of recurrent content in TV-Shows. The experiments showed that the three different methods all get reasonable results. Overall, it is found that the CNN-based method using uniform frame sampling has the most potential. Using this method for a metadata labeling task will still require manual supervision. Future research is needed to improve upon the methodology or to experiment with other implementations of CNN-based feature vectors. This thesis presented novel research for the unexplored research area of recurring content detection that is focused on VOD content.
+In this thesis we explored how well an image retrieval based approach could detect recurring content in a TV-show in an unsupervised manner. Experiments were performed using three different kind of feature vectors. Based upon these experiments we conclude that an image retrieval based approach definitely has potential for the unsupervised detection of recurrent content in TV-Shows. The experiments showed that the three different methods all get reasonable results. Overall, it is found that the CNN-based method using uniform frame sampling has the most potential. Using this method for a metadata labeling task will still require manual human supervision. Future research is needed to improve upon the methodology or to experiment with other implementations of CNN-based feature vectors. This thesis presented novel research for the unexplored research area of recurring content detection that is focused on VOD content.
 
 %recommendations: future studies
-Future studies could be performed on a larger dataset consisting of full seasons of several shows to further prove the validity of this method and these future studies could try variations of the methodology and different ways of constructing the CNN feature vectors. Also the experiment could be repeated with data where the recurrent content classes are more in balance to verify the results.
+Future studies could be performed on a larger dataset consisting of full seasons of several shows to further prove the validity of this method and these future studies could try variations of the methodology and different ways of constructing the CNN feature vectors. Also the experiment could be repeated with data where the recurring content classes are more in balance to verify the results.
 
 %implications: why do the results matter
 \iffalse

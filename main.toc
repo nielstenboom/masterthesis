@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1.1}Recurring Content Classes}{3}{section.1.1}
 \contentsline {subsubsection}{Recaps}{3}{section*.2}
 \contentsline {subsubsection}{Opening credits}{4}{section*.4}
-\contentsline {subsubsection}{Bumpers}{5}{section*.6}
+\contentsline {subsubsection}{Bumpers}{4}{section*.6}
 \contentsline {subsubsection}{Previews}{5}{section*.8}
 \contentsline {subsubsection}{Closing Credits}{5}{section*.10}
 \contentsline {section}{\numberline {1.2}Definitions}{6}{section.1.2}
@@ -13,18 +13,18 @@
 \contentsline {section}{\numberline {3.2}Color Histograms}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Color Texture Moments}{13}{section.3.3}
 \contentsline {section}{\numberline {3.4}CNN Features}{14}{section.3.4}
-\contentsline {chapter}{\numberline {4}Methodology}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Data}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Feature Vector Construction}{16}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Color Histograms}{16}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Color Texture Moments}{17}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}CNN Features}{17}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Matching and Detection}{17}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Recurring Content}{20}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Bumpers}{22}{subsection.4.3.2}
-\contentsline {chapter}{\numberline {5}Results}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}Recurring Content}{24}{section.5.1}
-\contentsline {section}{\numberline {5.2}Bumpers}{25}{section.5.2}
-\contentsline {section}{\numberline {5.3}Discussion}{27}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{29}{chapter.6}
-\contentsline {chapter}{\numberline {7}Bibliography}{30}{chapter.7}
+\contentsline {chapter}{\numberline {4}Methodology}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Data}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Feature Vector Construction}{17}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Color Histograms}{17}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Color Texture Moments}{18}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}CNN Features}{18}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Matching and Detection}{18}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Recurring Content}{21}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Bumpers}{23}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Recurring Content}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Bumpers}{26}{section.5.2}
+\contentsline {section}{\numberline {5.3}Discussion}{28}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{30}{chapter.6}
+\contentsline {chapter}{\numberline {7}Bibliography}{31}{chapter.7}

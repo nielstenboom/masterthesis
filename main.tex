@@ -69,68 +69,60 @@ With the subquestions: \\
 This thesis aims to answer aforementioned research questions. Our hypothesis is that such a method may achieve a level of effectiveness that allows practical application at RTL. The rest of this chapter will be used to expand on the different type of video classes which this research is focused on. Chapter \ref{relatedwork} discusses related work. Chapter \ref{section:imageretrieval} elaborates on the used methods for image retrieval. Chapter \ref{methodology} describes the data and methodology and then the produced results are presented in Chapter \ref{results}. Lastly, the results are discussed in Chapter \ref{discussion} and a conclusion is drawn in Chapter \ref{conclusion}.
 
 \section{Recurring Content Classes} \label{section:segmentclasses}
-In this section we discuss the different types of content to be detected. What all the content classes have in common is that they (partially) reappear in previous or future episodes or, as is the case with bumpers; that the content reappears within the episode itself. We will use this attribute for the detection. Example frame grabs from each of the content classes can be viewed in Figure \ref{fig:introductionexamples}.
-
-\begin{figure}[h]
-	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/introduction_examples.jpg}}
-	\caption{\textbf{Frame grabs from each recurring content class.}}
-	\label{fig:introductionexamples}
-\end{figure}
+In this section we discuss the different types of content to be detected. What all the content classes have in common is that they (partially) reappear in previous or future episodes or, as is the case with bumpers; that the content reappears within the episode itself. We will use this attribute for the detection.
 
 \subsubsection{Recaps}
-A television show typically has recaps before the opening credits. In the recaps content of previous episodes is repeated to refresh the viewer's memory. This is useful for linear TV when an episode is aired every week. Someone watching episodes back-to-back ideally wants to skip the recaps together with the opening credits because they have seen the content recently. Not all material preceding the opening credits is a recap though, it can be original content.
+A television show typically has recaps before the opening credits. In the recaps content of previous episodes is repeated to refresh the viewer's memory. This is useful for linear TV when an episode is aired every week. Someone watching episodes back-to-back ideally wants to skip the recaps together with the opening credits because they have seen the content recently. Not all material preceding the opening credits is a recap though, it can be original content. See Figure \ref{fig:contextrecaps} for a visual example.
+
+\begin{figure}[H]
+	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_recaps.png}}
+	\caption{\textbf{Visual depiction of recaps. Shots from episode 1 and 2 are shown at the start of episode 3 to give a brief summary of important events.}}
+	\label{fig:contextrecaps}
+\end{figure}
 
 \subsubsection{Opening credits}
-The opening credits of a TV-show are generally the same for all of the episodes in the same season. It typically opens the show with a theme song, presenting the most important actors at the start. There is no prior knowledge on how the opening credits of a show look like and they often change every season, therefore the detection should be unsupervised.
+The opening credits of a TV-show are generally the same for all of the episodes in the same season. It typically opens the show with a theme song, presenting the most important actors at the start. There is no prior knowledge on how the opening credits of a show look like and they often change every season, therefore the detection should be unsupervised. See Figure \ref{fig:contextopeningcredits} for a visual example.
+
+\begin{figure}[H]
+	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_openingcredits.png}}
+	\caption{\textbf{Visual depiction of opening credits. A very similar sequence of shots that start at different times at the beginning of an episode.}}
+	\label{fig:contextopeningcredits}
+\end{figure}
 
 \subsubsection{Bumpers}
-The bumper is a part of the video that eases a viewer into the upcoming commercial. Most of the times it has a voice over and text on screen saying: 'Next' (or the dutch translation of 'next') and footage of what is to be expected after the commercial break is shown.
+The bumper is a part of the video that eases a viewer into the upcoming commercial. Most of the times it has a voice over and text on screen saying: 'Next' (or the dutch translation of 'next') and footage of what is to be expected after the commercial break is shown. See Figure \ref{fig:contextbumpers} for a visual example.
+
+\begin{figure}[H]
+	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_bumpers.png}}
+	\caption{\textbf{Visual depiction of bumpers. A summary of important shots are shown together that will occur at a later point of time in the episode.}}
+	\label{fig:contextbumpers}
+\end{figure}
 
 \subsubsection{Previews}
-A preview is a segment at the end of an episode playing an advance showing of fragments of the next episode(s) are played. Previews can typically be found in content that was created specially for broadcast TV. It gives the viewer a taste of what to expect in the next episode that will air a week later. These previews may contain overlayed credits of people who helped in the production of the show.
+A preview is a segment at the end of an episode playing an advance showing of fragments of the next episode(s) are played. Previews can typically be found in content that was created specially for broadcast TV. It gives the viewer a taste of what to expect in the next episode that will air a week later. These previews may contain overlayed credits of people who helped in the production of the show. See Figure \ref{fig:contextpreviews} for a visual example.
+
+\begin{figure}[H]
+	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_previews.png}}
+	\caption{\textbf{Visual depiction of previews. It shows shots that will occur in the next episode with a textual overlay.}}
+	\label{fig:contextpreviews}
+\end{figure}
 
 \subsubsection{Closing Credits}
-The closing credits at the end of a video mostly consist of scrolling text and there is little variation between the frames. In these texts everybody related to the production of the video is mentioned. In general the frames all have a black background with white text. But backgrounds can also vary, therefore a solution that simply looks for black and white would not suffice.
+The closing credits at the end of a video mostly consist of scrolling text and there is little variation between the frames. In these texts everybody related to the production of the video is mentioned. In general the frames all have a black background with white text. But backgrounds can also vary, therefore a solution that simply looks for black and white would not suffice. See Figure \ref{fig:contextclosingcredits} for a visual example.
 
-\section{Definitions and Techniques}
-This section will be used to elaborate on some topics mentioned in this thesis. We define a season with multiple episodes of a TV-show as T.
+\begin{figure}[H]
+	\makebox[\textwidth][c]{\includegraphics[width=\paperwidth,center, scale=0.8]{images/context_closingcredits.png}}
+	\caption{\textbf{Visual depiction of closing credits. Frames consisting of text at the end of each episode in which the actors, producers and others related to the show are given credit.}}
+	\label{fig:contextclosingcredits}
+\end{figure}
+
+\section{Definitions}
+This section will be used to introduce definitions used throughout this thesis. We define a season with multiple episodes of a TV-show as T.
 \[T = \{E_1, E_2, \dots, E_x\}\]
 An episode within a season is defined as a set of frames.
 \[E = \{f_1, f_2, \dots, f_y\}\]
 The videos contains shot boundaries, we refer the set of locations of shotboundaries as B.
 \[B = \{b_1, b_2, \dots, b_z\}\]
-
-\subsubsection{Shot Change Detection}
-
-Shot detection is a technique that can be used on videos to determine shot boundaries, see Figure \ref{shotchange} for an example of such a shot change. 
-
-\begin{figure}[H]
-	\includegraphics[width=12cm]{images/shotchange.jpg}
-	\centering
-	\caption{\textbf{Example of a shot change within 4 frames of a video.}}
-	\label{shotchange}
-\end{figure}
-
-Shot detection is going to be used and thus will we expand on it. A lot of research has been done related to shot detection \cite{lienhart1998comparison} and many techniques have been proposed. 
-
-We use a method that looks at the shift in mean color in HSV space \cite{shao2015shot}. HSV (Hue, Saturation, Value) color space is a more intuitive color mixing model compared to RGB (Red, Green, Blue) color space. Because one can change a value in either of the three values in HSV and expect what the new color is going to look like. This is almost impossible for RGB because for this same color change to happen, you need to change all three red, green and blue values to result in the same color space.
-
-The shot boundaries are classified by calculating the difference in hue, saturation and value for each frame and then from this the mean is calculated. If the mean is higher than a threshold H, then a shot boundary is marked, refer to algorithm \ref{algorithm:shotboundary} for a pseudo-code representation.
-
-\begin{algorithm}[H] 
-	\SetAlgoLined
-	shotBoundaries = List()\;
-	previousMeanHSV = getMeanHSV(Episode[0])\;
-	\For{frame in Episode}{
-		meanHSV = getMeanHSV(frame)\;
-		\If{abs(meanHSV - previousMeanHSV) $>$ H}{
-			shotBoundaries.add(frame)\;
-		}
-		previousMeanHSV = meanHSV\;
-	}
-	\caption{\textbf{Shot boundary detection}}
-	\label{algorithm:shotboundary}
-\end{algorithm}
 
 \chapter{Related Work} \label{relatedwork}
 
@@ -154,6 +146,36 @@ All of the previously mentioned works never cover the specific topic of segmenti
 \\
 
 Dimensionality reduction and efficient matching of large amounts of visual data is important within content based image retrieval, Zheng et al. give a detailed summary of the most significant contributions from past years \cite{zheng2018sift}. Their summary covers three periods in image retrieval: Early methods, SIFT-based methods and Convolutional Neural Network (CNN) based methods. Smeulders et al. present all the contributions of the early methods \cite{smeulders2000content}, these methods focused on looking at the color, texture and local geometry of images for retrieval \cite{yu2002color,manjunath1996texture}. Not much later the Bag-of-words (BoW) model was proposed as a new method for image retrieval \cite{sivic2003video}. The advantage of this is that inverted indexes can be used for immediate retrieval of similar images. The BoW model paired with SIFT-descriptors \cite{lowe2004distinctive} as the feature vectors was used in image retrieval research for years \cite{nister2006scalable,philbin2007object,jegou2008hamming,jegou2010aggregating,jegou2012aggregating}. Since 2012 when the convolutional neural network was introduced \cite{krizhevsky2012imagenet} research switched to CNN-based methods for image retrieval because they achieved better performance on a variety of image retrieval tasks	 \cite{babenko2014neural,yue2015exploiting, tolias2015particular}.
+
+\section{Shot Change Detection}
+
+Shot detection is a technique that can be used on videos to determine shot boundaries, see Figure \ref{shotchange} for an example of such a shot change. 
+
+\begin{figure}[H]
+	\includegraphics[width=12cm]{images/shotchange.jpg}
+	\centering
+	\caption{\textbf{Example of a shot change within 4 frames of a video.}}
+	\label{shotchange}
+\end{figure}
+
+Shot detection is going to be used and thus will we expand on it. A lot of research has been done related to shot detection \cite{lienhart1998comparison} and many techniques have been proposed. 
+
+We use a method that looks at the shift in mean color in HSV space \cite{shao2015shot}. The shot boundaries are classified by calculating the difference in hue, saturation and value for each frame and then from this the mean is calculated. If the mean is higher than a threshold H, then a shot boundary is marked, refer to algorithm \ref{algorithm:shotboundary} for a pseudo-code representation.
+
+\begin{algorithm}[H] 
+	\SetAlgoLined
+	shotBoundaries = List()\;
+	previousMeanHSV = getMeanHSV(Episode[0])\;
+	\For{frame in Episode}{
+		meanHSV = getMeanHSV(frame)\;
+		\If{abs(meanHSV - previousMeanHSV) $>$ H}{
+			shotBoundaries.add(frame)\;
+		}
+		previousMeanHSV = meanHSV\;
+	}
+	\caption{\textbf{Shot boundary detection}}
+	\label{algorithm:shotboundary}
+\end{algorithm}
 
 
 \iffalse
@@ -328,7 +350,12 @@ This method will be called CNN in the results chapter.
 
 \section{Matching and Detection}
 
-All the resulting lists of feature vectors will be added to the index of an empty Faiss instance. Faiss is a library for efficient similarity search of dense vectors \cite{faiss, faiss-github} and thus perfectly suited for our task. This library will efficiently handle building the inverted index and nearest neighbor matching. The science that is behind large scale matching of dense vectors is a research area on its own, but outside the scope of this thesis. We use Faiss because it is released as an open source library and therefore easy to use in an implementation.
+All the resulting lists of feature vectors will be added to the index of an empty Faiss instance. Faiss is a library for efficient similarity search of dense vectors \cite{faiss, faiss-github} and thus perfectly suited for our task. This library efficiently handles building the inverted index and nearest neighbor matching. The library supports many different implementations of several techniques. We use their "Exact search for L2" implementation. Which does an exact brute force search given a set of vectors $x_i$ in dimension $d$ as the documents, when given a new vector $x$ in dimension d as the query, it efficiently performs the operation:
+
+\[i = argmin_i||x - x_i||\]
+
+\noindent Where $||x - x_i||$ is the euclidean distance (L2). We use Faiss as opposed to implementing our own brute force search because it is open soure and it implemented multi-threading and utilization of BLAS libraries in an optimal way \cite{faiss-blog}.
+\\
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth, center, scale=0.75]{images/thesisdiagram.png}
@@ -340,6 +367,59 @@ All the resulting lists of feature vectors will be added to the index of an empt
 \subsection{Recurring Content}
 To mark a part of the video as recurring content, we do the following steps: The frames of interest are converted to feature vectors while retaining the sequential order of episodes. Then the episode is used as an image query against all other episodes, resulting in a vector with distances for the best matches. We mark the locations of the indexes where these distances are lower than the percentile $p \in \{5\%, 7.5\%, 10\%\}$ of the lowest-distances vector. These are our initial detections. Because these detections can still contain noise, we do the following post-processing steps: Detections are merged into one if they are less than 10 seconds apart; and, we only keep the two largest detections within the first 20\% of the video or we keep the detection if it ends in the last 15 seconds of the video. The rationale behind this is that the recurring content that we want to detect is either in the first or last part of the video. See Figure \ref{fig:diagram} for a visual depiction of the described methodology.
 
+\begin{algorithm}[H] 
+	\SetAlgoLined
+	
+	import faiss
+	
+	percentile = 5 //or 7.5 or 10
+	\texttt{\\}
+	\texttt{\\}
+	//Code for determining recurring content in episode with index i
+	season = T\;
+	episode = season.get(i)\;
+	season.remove(i)\;
+	episodeVectors = convertToVectors(episode)\;
+	seasonVectors = convertToVectors(season)\;
+	\texttt{\\}
+	index = faiss.buildIndex(seasonVectors)\;
+	distances = index.search(episodeVectors)\;
+	\texttt{\\}
+	threshold = getPercentileDistance(distances, percentile)\;
+	\texttt{\\}
+	recurringIndexes = new List()\;
+	\For{i=0; i $<$ distances.length; i++}{
+		distance = distances[i]\;
+		\If{distance $<$ threshold }{
+			recurringIndexes.add(i)\;
+		}
+
+	}
+	\texttt{\\}
+	//Merge indexes as recurring content when they are less than 10 seconds apart \\
+	detections = MergeIndexes(recurringIndexes, 10)\;
+	\texttt{\\}
+	//Now only return the two largest detections in the beginning of the video \\
+	//and detection that is at the end of a video \\
+	detectionsAtStart = new List()\;
+	detectionsAtEnd = new List()\;
+	\For{i=0; i $<$ detections.length; i++}{
+		detection = detections[i]\;
+		\If{occursAtBeginOfVideo(detection) }{
+			detectionsAtStart.add(detection)\;
+		}
+		\If{occursAtEndOfVideo(detection) }{
+			detectionsAtEnd.add(detection)\;
+		}
+		
+	}
+
+	\textbf{return} getTwoLongestIntervals(detectionsAtStart) + detectionsAtEnd
+
+	\caption{\textbf{Recurring content detection}}
+	\label{algorithm:shotboundary}
+\end{algorithm}
+
 \subsection{Bumpers}
 The methodology for detecting the bumpers within video content is different, because a bumper only contains recurring content from within the video itself. It shows shots that will be shown after the break, these shots may not reoccur in other episodes within a season. Therefore we cannot use the same methodology as described before for detection.
 
@@ -347,6 +427,54 @@ For the detection of bumpers we take a sliding window of 20 seconds of video fra
 
 After all the closest in-episode nearest neighbors are computed for each frame then from these results bumpers can be detected. We found that a global threshold for determining matches does not work well, probably because of the fact that bumpers are very short. Therefore we will use the ratio test described by Lowe \cite{lowe2004distinctive} for deciding on whether there is a match. With the ratio test the distance between the closest neighbor and second-closest neighbor is taken into account. The ratio of the distance of the closest neighbor to the distance of the second-closest neighbor determines whether there is a correct match, if the ratio is low then there is a higher chance for the match to be correct. In \cite{lowe2004distinctive} they classify a match to be correct if the ratio of the distances is equal to 0.8 or lower, we experimented with a ratio $r \in \{0.5, 0.6, 0.7, 0.8\}$ to find the optimal ratio for this problem.
 
+\begin{algorithm}[H] 
+	\SetAlgoLined
+	
+	import faiss\;
+	RATIO = 0.5 // or 0.6 or 0.7 or 0.8 \\
+	\texttt{\\}
+	
+	//Code for determining bumpers in episode with index i \\
+	season = T\;
+	episode = season.get(i)\;
+	episodeVectors = convertToVectors(episode)\;
+	\texttt{\\}
+		
+	//To get a stepsize of 10 seconds of video we need to jump (10*25)/3 indexes \\
+	//because frames are subsampled every 3 frames \\
+	stepSize = (10 * 25) / 3 \;
+	currentStep = 0\;
+	inEpisodeDistances = new List()\;
+	\While{currentStep $<$ episodeVectors.size()}
+	{
+	\texttt{\\}
+	 query = episodeVectors[currentStep:currentStep + stepSize] \;
+	 index = faiss.buildIndex(EpisodeVectors[0:currentStep])\;
+	 index.add(EpisodeVectors[currentStep+stepsize:episodeVectors.size()-1])\;
+	 \texttt{\\}
+	 //Compute 2 nearest neighbors for all frames in the current step \\
+	 resultDistances = index.search(query, neighbors = 2)\;
+	 inEpisodeDistances.concatenate(resultDistances)\;
+	}
+
+	ratios = inEpisodeDistances[:,0] / inEpisodeDistances[:,1]\;
+	
+	ratioIndexes = new List()\;
+	\For{i=0; i $<$ ratios.length; i++}{
+		ratios = ratios[i]\;
+		\If{ratio $<$ RATIO }{
+			ratioIndexes.add(i)\;
+		}
+		
+	}
+	
+	//Return the consecutive ratio indexes  \\
+	//that together are longer than 2.5 seconds \\
+	return getConsecutiveRatioIndexes(ratioIndexes, 2.5)\;
+	
+	\caption{\textbf{Bumper detection}}
+	\label{algorithm:shotboundary}
+\end{algorithm}
 
 \chapter{Results} \label{results}
 This chapter contains the results for the experiments of detecting the recurring content (recaps, opening/closing credits and previews) and the experiments of the bumper detection.

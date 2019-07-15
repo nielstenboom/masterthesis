@@ -1,15 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{lienhart1998comparison}
-R.~W. Lienhart, ``Comparison of automatic shot boundary detection algorithms,''
-  in {\em Storage and Retrieval for Image and Video Databases VII}, vol.~3656,
-  pp.~290--302, International Society for Optics and Photonics, 1998.
-
-\bibitem{shao2015shot}
-H.~Shao, Y.~Qu, and W.~Cui, ``Shot boundary detection algorithm based on hsv
-  histogram and hog feature,'' in {\em 5th International Conference on Advanced
-  Engineering Materials and Technology}, pp.~951--957, 2015.
-
 \bibitem{lienhart1997detection}
 R.~Lienhart, C.~Kuhm{\"u}nch, and W.~Effelsberg, ``On the detection and
   recognition of television commercials,'' 1997.
@@ -120,6 +110,16 @@ G.~Tolias, R.~Sicre, and H.~J{\'e}gou, ``Particular object retrieval with
   integral max-pooling of {CNN} activations,'' {\em arXiv preprint
   arXiv:1511.05879}, 2015.
 
+\bibitem{lienhart1998comparison}
+R.~W. Lienhart, ``Comparison of automatic shot boundary detection algorithms,''
+  in {\em Storage and Retrieval for Image and Video Databases VII}, vol.~3656,
+  pp.~290--302, International Society for Optics and Photonics, 1998.
+
+\bibitem{shao2015shot}
+H.~Shao, Y.~Qu, and W.~Cui, ``Shot boundary detection algorithm based on hsv
+  histogram and hog feature,'' in {\em 5th International Conference on Advanced
+  Engineering Materials and Technology}, pp.~951--957, 2015.
+
 \bibitem{rajam2013survey}
 F.~Rajam and S.~Valli, ``A survey on content based image retrieval,'' {\em Life
   Science Journal}, vol.~10, no.~2, pp.~2475--2487, 2013.
@@ -154,5 +154,9 @@ J.~Johnson, M.~Douze, and H.~J{\'e}gou, ``Billion-scale similarity search with
 ``Faiss, a library for efficient similarity search and clustering of dense
   vectors - {F}acebook {R}esearch.''
   \url{https://github.com/facebookresearch/faiss}.
+
+\bibitem{faiss-blog}
+``Blog: Faiss, a library for efficient similarity searc.''
+  \url{https://code.fb.com/data-infrastructure/faiss-a-library-for-efficient-similarity-search/}.
 
 \end{thebibliography}
